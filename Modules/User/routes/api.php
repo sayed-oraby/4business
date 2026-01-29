@@ -19,3 +19,8 @@ Route::middleware(['auth:sanctum'])->prefix('v1/profile')->name('profile.')->gro
     Route::put('/notifications-settings', [ProfileController::class, 'updateNotificationSettings'])->name('notifications.update');
 });
 
+// Contact Us - اتصل بنا (public route, no authentication required)
+Route::prefix('v1')->name('contact.')->group(function () {
+    Route::post('/contact-us', [ProfileController::class, 'contactUs'])->name('submit');
+});
+

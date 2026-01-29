@@ -177,15 +177,17 @@
                     </div>
                 
                     <!-- Office Requests -->
-                    <div class="menu-item">
+                    {{-- <div class="menu-item">
                         <a class="menu-link {{ is_active_route('dashboard.users.office-requests.*') }}" href="{{ route('dashboard.users.office-requests.index') }}">
                             <span class="menu-icon">
                                 <i class="ki-duotone ki-home fs-2"></i>
                             </span>
                             <span class="menu-title">طلبات المكاتب العقارية</span>
                         </a>
-                    </div>
+                    </div> --}}
                 @endif
+
+                
 
                 @if($menuAvailability['shipping'] ?? false)
                     <div class="menu-item pt-5">
@@ -346,6 +348,15 @@
                     </div>
                 @endif
 
+                <div class="menu-item">
+                    <a class="menu-link {{ is_active_route('dashboard.contact-messages.index.*') }}" href="{{ route('dashboard.contact-messages.index') }}">
+                        <span class="menu-icon">
+                            <i class="ki-duotone ki-home fs-2"></i>
+                        </span>
+                        <span class="menu-title">رسائل اتصل بنا</span>
+                    </a>
+                </div>
+                
                 @if($menuAvailability['logs'] ?? false)
                     <div class="menu-item">
                         <a class="menu-link {{ is_active_route('dashboard.audit-logs.*') }}" href="{{ route('dashboard.audit-logs.index') }}">

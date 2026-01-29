@@ -97,6 +97,23 @@ return [
         'call_number_required' => 'Call number is required when enabled.',
         'contact_methods_updated' => 'Contact methods updated successfully.',
         'notification_settings_updated' => 'Notification settings updated successfully.',
+        'contact_message_sent' => 'Your message has been sent successfully. We will get back to you soon.',
+    ],
+    'validation' => [
+        'name_required' => 'Full name is required.',
+        'email_required' => 'Email address is required.',
+        'email_invalid' => 'Please enter a valid email address.',
+        'phone_required' => 'Phone number is required.',
+        'message_required' => 'Message details are required.',
+        'message_min' => 'Message must be at least 10 characters.',
+    ],
+    'fields' => [
+        'name' => 'Full Name',
+        'email' => 'Email',
+        'phone' => 'Phone Number',
+        'country_code' => 'Country Code',
+        'subject' => 'Message Type',
+        'message' => 'Message Details',
     ],
     'audit' => [
         'created' => 'Created user :email',

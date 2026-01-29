@@ -7,8 +7,10 @@ use App\Support\ApiResponse;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Modules\Setting\Models\ContactMessage;
 use Modules\User\Http\Requests\Api\ChangeAvatarRequest;
 use Modules\User\Http\Requests\Api\ChangePasswordRequest;
+use Modules\User\Http\Requests\Api\ContactUsRequest;
 use Modules\User\Http\Requests\Api\DeleteAccountRequest;
 use Modules\User\Http\Requests\Api\UpdateProfileRequest;
 use Modules\User\Http\Resources\UserResource;
@@ -202,6 +204,37 @@ class ProfileController extends Controller
                 'messages' => $user->notify_messages,
                 'ad_expiry' => $user->notify_ad_expiry,
             ]
+        );
+    }
+
+    /**
+     * Submit contact us form
+     * حفظ رسالة اتصل بنا
+     */
+    public function contactUs(ContactUsRequest $request): JsonResponse
+    {
+        $contactMessage = ContactMessage::create([
+            'user_id' => auth('sanctum')->check() ? auth('sanctum')->id() : null,
+            'name' => $request->name,
+            'email' => $request->email,
+            'country_code' => $request->country_code ?? '+965',
+            'phone' => $request->phone,
+            'subject' => $request->subject,
+            'message' => $request->message,
+            'status' => 'pending',
+        ]);
+
+        return $this->successResponse(
+            data: [
+                'id' => $contactMessage->id,
+                'name' => $contactMessage->name,
+                'email' => $contactMessage->email,
+                'phone' => $contactMessage->full_phone,
+                'subject' => $contactMessage->subject,
+                'message' => $contactMessage->message,
+                'created_at' => $contactMessage->created_at->toISOString(),
+            ],
+            message: __('user::users.messages.contact_message_sent')
         );
     }
 }

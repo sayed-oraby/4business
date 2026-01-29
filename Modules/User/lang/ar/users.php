@@ -97,6 +97,23 @@ return [
         'call_number_required' => 'رقم الاتصال مطلوب عند تفعيل الخدمة.',
         'contact_methods_updated' => 'تم تحديث وسائل التواصل بنجاح.',
         'notification_settings_updated' => 'تم تحديث إعدادات الإشعارات بنجاح.',
+        'contact_message_sent' => 'تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.',
+    ],
+    'validation' => [
+        'name_required' => 'الاسم بالكامل مطلوب.',
+        'email_required' => 'البريد الإلكتروني مطلوب.',
+        'email_invalid' => 'يرجى إدخال بريد إلكتروني صحيح.',
+        'phone_required' => 'رقم الجوال مطلوب.',
+        'message_required' => 'تفاصيل الرسالة مطلوبة.',
+        'message_min' => 'يجب أن تكون الرسالة 10 أحرف على الأقل.',
+    ],
+    'fields' => [
+        'name' => 'الاسم بالكامل',
+        'email' => 'البريد الإلكتروني',
+        'phone' => 'رقم الجوال',
+        'country_code' => 'كود الدولة',
+        'subject' => 'نوع الرسالة',
+        'message' => 'تفاصيل الرسالة',
     ],
     'audit' => [
         'created' => 'تم إنشاء المستخدم :email',
