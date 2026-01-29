@@ -22,7 +22,11 @@ class UpdateProfileRequest extends FormRequest
         $rules = [
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255|unique:users,email,'.$user->id,
+            'mobile' => 'required|numeric|unique:users,mobile,'.$user->id,
             'avatar' => 'nullable|image|max:2048',
+            'state_id' => 'required|exists:shipping_states,id',
+            'city_id' => 'required|exists:shipping_cities,id',
+            'avatar' => ['nullable', 'image', 'max:2048'],
         ];
 
         if ($user->account_type === 'office') {

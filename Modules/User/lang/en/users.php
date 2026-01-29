@@ -93,6 +93,10 @@ return [
         'password_changed' => 'Password updated successfully.',
         'avatar_updated' => 'Profile photo updated.',
         'profile_loaded' => 'Profile details loaded successfully.',
+        'whatsapp_number_required' => 'WhatsApp number is required when enabled.',
+        'call_number_required' => 'Call number is required when enabled.',
+        'contact_methods_updated' => 'Contact methods updated successfully.',
+        'notification_settings_updated' => 'Notification settings updated successfully.',
     ],
     'audit' => [
         'created' => 'Created user :email',

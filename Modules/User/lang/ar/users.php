@@ -93,6 +93,10 @@ return [
         'password_changed' => 'تم تحديث كلمة المرور.',
         'avatar_updated' => 'تم تحديث الصورة الشخصية.',
         'profile_loaded' => 'تم تحميل بيانات الملف الشخصي بنجاح.',
+        'whatsapp_number_required' => 'رقم الواتس آب مطلوب عند تفعيل الخدمة.',
+        'call_number_required' => 'رقم الاتصال مطلوب عند تفعيل الخدمة.',
+        'contact_methods_updated' => 'تم تحديث وسائل التواصل بنجاح.',
+        'notification_settings_updated' => 'تم تحديث إعدادات الإشعارات بنجاح.',
     ],
     'audit' => [
         'created' => 'تم إنشاء المستخدم :email',

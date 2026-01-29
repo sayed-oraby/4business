@@ -4,9 +4,14 @@ return [
     'invalid_credentials' => 'invalid credentials',
     'phone_not_found' => 'Phone number not registered',
     'password_confirmation_mismatch' => 'Password and password confirmation do not match',
-    'invalid_otp' => 'The verification code is invalid or expired.',
+    'invalid_otp' => 'The verification code is invalid.',
+    'otp_expired' => 'The verification code has expired.',
+    'otp_sent' => 'Verification code sent to your mobile number.',
+    'otp_resent' => 'Verification code has been resent.',
+    'user_not_found' => 'User not found.',
     'registered' => 'Registered successfully.',
     'verified' => 'Account verified successfully.',
+
     'fields' => [
         'email' => 'email address',
         'password' => 'password',

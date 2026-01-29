@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Laravel\Sanctum\HasApiTokens;
 use Modules\Post\Models\Fav;
+use Modules\Shipping\Models\ShippingCity;
+use Modules\Shipping\Models\ShippingState;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Permission\Traits\HasRoles;
@@ -46,6 +48,18 @@ class User extends Authenticatable
         'office_rejection_reason',
         'otp_code',
         'is_verified',
+        'otp_expires_at',
+        'state_id',
+        'city_id',
+        // Social media contact fields
+        'whatsapp_enabled',
+        'whatsapp_number',
+        'call_enabled',
+        'call_number',
+        // Notification settings
+        'notify_ad_status',
+        'notify_messages',
+        'notify_ad_expiry',
     ];
 
     /**
@@ -69,6 +83,11 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'birthdate' => 'date',
             'password' => 'hashed',
+            'whatsapp_enabled' => 'bool',
+            'call_enabled' => 'bool',
+            'notify_ad_status' => 'bool',
+            'notify_messages' => 'bool',
+            'notify_ad_expiry' => 'bool',
         ];
     }
 
@@ -120,6 +139,15 @@ class User extends Authenticatable
 
     public function favourites() {
         return $this->hasMany(Fav::class,'user_id');
+    }
+
+
+    public function state() {
+        return $this->belongsTo(ShippingState::class,'state_id');
+    }
+
+    public function city() {
+        return $this->belongsTo(ShippingCity::class,'city_id');
     }
 }
 

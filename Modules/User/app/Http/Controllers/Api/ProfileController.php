@@ -35,10 +35,18 @@ class ProfileController extends Controller
     {
         $user = $this->service->updateProfile($request->user(), $request->validated());
 
-        if ($user->account_type === 'office') {
-            $user->company_name = $request->company_name;
-            $user->address = $request->address;
+        if($request->hasFile('avatar') && $request->avatar != null) {
+            $avatarUrl = $this->service->updateAvatar(
+                $request->user(),
+                $request->file('avatar'),
+                true
+            );
         }
+
+        // if ($user->account_type === 'office') {
+        //     $user->company_name = $request->company_name;
+        //     $user->address = $request->address;
+        // }
 
         return $this->successResponse(
             data: ['user' => (new UserResource($user))->resolve()],
@@ -79,4 +87,122 @@ class ProfileController extends Controller
             message: __('user::users.messages.deleted')
         );
     }
+
+    /**
+     * Update user's contact methods (WhatsApp & Phone calls)
+     */
+    public function updateContactMethods(Request $request): JsonResponse
+    {
+        $validated = $request->validate([
+            'whatsapp_enabled' => 'required|boolean',
+            'whatsapp_number' => 'nullable|numeric',
+            'call_enabled' => 'required|boolean',
+            'call_number' => 'nullable|numeric',
+        ]);
+
+        $user = $request->user();
+
+        // If enabled, number is required
+        if ($validated['whatsapp_enabled'] && empty($validated['whatsapp_number'])) {
+            return $this->errorResponse(
+                message: __('user::users.messages.whatsapp_number_required'),
+                status: 422
+            );
+        }
+
+        if ($validated['call_enabled'] && empty($validated['call_number'])) {
+            return $this->errorResponse(
+                message: __('user::users.messages.call_number_required'),
+                status: 422
+            );
+        }
+
+        $user->update([
+            'whatsapp_enabled' => $validated['whatsapp_enabled'],
+            'whatsapp_number' => $validated['whatsapp_number'],
+            'call_enabled' => $validated['call_enabled'],
+            'call_number' => $validated['call_number'],
+        ]);
+
+        return $this->successResponse(
+            data: [
+                'whatsapp' => [
+                    'enabled' => $user->whatsapp_enabled,
+                    'number' => $user->whatsapp_number,
+                ],
+                'call' => [
+                    'enabled' => $user->call_enabled,
+                    'number' => $user->call_number,
+                ],
+            ],
+            message: __('user::users.messages.contact_methods_updated')
+        );
+    }
+
+    /**
+     * Update user's notification settings
+     */
+    public function updateNotificationSettings(Request $request): JsonResponse
+    {
+        $validated = $request->validate([
+            'notify_ad_status' => 'required|boolean',  // حالة الإعلان
+            'notify_messages' => 'required|boolean',    // رسائل / تواصل
+            'notify_ad_expiry' => 'required|boolean',   // انتهاء الإعلان
+        ]);
+
+        $user = $request->user();
+
+        $user->update([
+            'notify_ad_status' => $validated['notify_ad_status'],
+            'notify_messages' => $validated['notify_messages'],
+            'notify_ad_expiry' => $validated['notify_ad_expiry'],
+        ]);
+
+        return $this->successResponse(
+            data: [
+                'ad_status' => $user->notify_ad_status,
+                'messages' => $user->notify_messages,
+                'ad_expiry' => $user->notify_ad_expiry,
+            ],
+            message: __('user::users.messages.notification_settings_updated')
+        );
+    }
+
+    /**
+     * Get user's contact methods
+     */
+    public function getContactMethods(Request $request): JsonResponse
+    {
+        $user = $request->user();
+
+        return $this->successResponse(
+            data: [
+                'whatsapp' => [
+                    'enabled' => $user->whatsapp_enabled,
+                    'number' => $user->whatsapp_number,
+                ],
+                'call' => [
+                    'enabled' => $user->call_enabled,
+                    'number' => $user->call_number,
+                ],
+            ]
+        );
+    }
+
+    /**
+     * Get user's notification settings
+     */
+    public function getNotificationSettings(Request $request): JsonResponse
+    {
+        $user = $request->user();
+
+        return $this->successResponse(
+            data: [
+                'ad_status' => $user->notify_ad_status,
+                'messages' => $user->notify_messages,
+                'ad_expiry' => $user->notify_ad_expiry,
+            ]
+        );
+    }
 }
+

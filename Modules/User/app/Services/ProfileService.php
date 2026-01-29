@@ -24,9 +24,10 @@ class ProfileService
     {
         $user->fill([
             'name' => $data['name'],
-            // 'mobile' => $data['mobile'] ?? null,
-            'birthdate' => $data['birthdate'] ?? null,
-            'gender' => $data['gender'] ?? null,
+            'mobile' => $data['mobile'] ?? null,
+            'email' => $data['email'] ?? null,
+            'state_id' => $data['state_id'] ?? null,
+            'city_id' => $data['city_id'] ?? null,
         ])->save();
 
         $messageKey = 'user::users.messages.updated';
