@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="إضافة إعلان جديد - دليل العقار">
+  <title>إضافة إعلان - دليل العقار</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/new-listing.css">
+</head>
+<body class="p-new-listing page-new-listing">
+  <!-- ========== NAVBAR ========== -->
+  <nav class="c-navbar">
+    <div class="l-container c-navbar__inner">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+
+      <div class="c-navbar__links">
+        <a href="index.html" class="c-navbar__link">الرئيسية</a>
+        <a href="listings.html" class="c-navbar__link">عقارات الكويت</a>
+        <a href="agents.html" class="c-navbar__link">المكاتب</a>
+        <a href="login.html" class="c-navbar__link">دخول</a>
+      </div>
+
+      <div class="c-navbar__cta">
+        <a href="#" class="c-navbar__lang">EN</a>
+      </div>
+
+      <button class="c-navbar__hamburger" id="openDrawer" aria-label="القائمة">
+        <svg class="c-navbar__hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE DRAWER ========== -->
+  <div class="c-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="c-drawer" id="drawer">
+    <div class="c-drawer__header">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+      <button class="c-drawer__close" id="closeDrawer" aria-label="إغلاق">
+        <svg class="c-drawer__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="c-drawer__nav">
+      <a href="index.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        الرئيسية
+      </a>
+      <a href="listings.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        </svg>
+        عقارات الكويت
+      </a>
+      <a href="agents.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+        </svg>
+        المكاتب
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ========== HERO ========== -->
+  <section class="p-new-listing__hero">
+    <div class="l-container">
+      <div class="p-new-listing__hero-content">
+        <span class="p-new-listing__badge">
+          <svg class="p-new-listing__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          مجاني
+        </span>
+        <h1 class="p-new-listing__title">إضافة إعلان جديد</h1>
+        <p class="p-new-listing__subtitle">
+          أدخل بيانات العقار للوصول إلى آلاف المهتمين
+        </p>
+        
+        <!-- Progress Steps -->
+        <div class="p-new-listing__progress">
+          <div class="p-new-listing__progress-step">
+            <div class="p-new-listing__progress-dot p-new-listing__progress-dot--active" id="dot1">1</div>
+          </div>
+          <div class="p-new-listing__progress-line" id="line1"></div>
+          <div class="p-new-listing__progress-step">
+            <div class="p-new-listing__progress-dot" id="dot2">2</div>
+          </div>
+          <div class="p-new-listing__progress-line" id="line2"></div>
+          <div class="p-new-listing__progress-step">
+            <div class="p-new-listing__progress-dot" id="dot3">3</div>
+          </div>
+        </div>
+        <div class="p-new-listing__progress-label">
+          <span>نوع العقار</span>
+          <span>التفاصيل</span>
+          <span>النشر</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAIN ========== -->
+  <main class="p-new-listing__main">
+    <div class="l-container">
+      <div class="p-new-listing__card" id="formCard">
+        
+        <!-- STEP 1: Property Type -->
+        <div class="p-new-listing__step p-new-listing__step--active" id="step1">
+          <div class="p-new-listing__step-header">
+            <div class="p-new-listing__step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h2 class="p-new-listing__step-title">اختر نوع العقار</h2>
+            <p class="p-new-listing__step-desc">ما هو نوع العقار الذي تود الإعلان عنه؟</p>
+          </div>
+          
+          <div class="p-new-listing__type-grid">
+            <div class="p-new-listing__type-card">
+              <input type="radio" name="propertyType" value="apartment" id="typeApartment" class="p-new-listing__type-input" checked>
+              <label for="typeApartment" class="p-new-listing__type-label">
+                <div class="p-new-listing__type-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="2" width="16" height="20" rx="2"/>
+                    <path d="M9 22V12h6v10"/>
+                    <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01"/>
+                  </svg>
+                </div>
+                <span class="p-new-listing__type-name">شقة</span>
+              </label>
+            </div>
+            
+            <div class="p-new-listing__type-card">
+              <input type="radio" name="propertyType" value="house" id="typeHouse" class="p-new-listing__type-input">
+              <label for="typeHouse" class="p-new-listing__type-label">
+                <div class="p-new-listing__type-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                </div>
+                <span class="p-new-listing__type-name">بيت</span>
+              </label>
+            </div>
+            
+            <div class="p-new-listing__type-card">
+              <input type="radio" name="propertyType" value="land" id="typeLand" class="p-new-listing__type-input">
+              <label for="typeLand" class="p-new-listing__type-label">
+                <div class="p-new-listing__type-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 15h18"/>
+                    <path d="M9 3v18"/>
+                  </svg>
+                </div>
+                <span class="p-new-listing__type-name">أرض</span>
+              </label>
+            </div>
+            
+            <div class="p-new-listing__type-card">
+              <input type="radio" name="propertyType" value="building" id="typeBuilding" class="p-new-listing__type-input">
+              <label for="typeBuilding" class="p-new-listing__type-label">
+                <div class="p-new-listing__type-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="2" width="16" height="20" rx="2"/>
+                    <path d="M9 6h6M9 10h6M9 14h6M9 18h6"/>
+                  </svg>
+                </div>
+                <span class="p-new-listing__type-name">عمارة</span>
+              </label>
+            </div>
+            
+            <div class="p-new-listing__type-card">
+              <input type="radio" name="propertyType" value="chalet" id="typeChalet" class="p-new-listing__type-input">
+              <label for="typeChalet" class="p-new-listing__type-label">
+                <div class="p-new-listing__type-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 12h3v9h14v-9h3L12 2z"/>
+                    <path d="M9 21v-6h6v6"/>
+                  </svg>
+                </div>
+                <span class="p-new-listing__type-name">شاليه</span>
+              </label>
+            </div>
+            
+            <div class="p-new-listing__type-card">
+              <input type="radio" name="propertyType" value="commercial" id="typeCommercial" class="p-new-listing__type-input">
+              <label for="typeCommercial" class="p-new-listing__type-label">
+                <div class="p-new-listing__type-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18"/>
+                    <path d="M5 21V7l8-4 8 4v14"/>
+                    <path d="M9 21v-4h6v4"/>
+                    <path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/>
+                  </svg>
+                </div>
+                <span class="p-new-listing__type-name">تجاري</span>
+              </label>
+            </div>
+          </div>
+          
+          <!-- Purpose Selection -->
+          <h3 class="p-new-listing__label" style="margin-top: var(--space-24); margin-bottom: var(--space-16);">ما هو غرض الإعلان؟</h3>
+          <div class="p-new-listing__purpose-group">
+            <div class="p-new-listing__purpose">
+              <input type="radio" name="purpose" value="rent" id="purposeRent" class="p-new-listing__purpose-input" checked>
+              <label for="purposeRent" class="p-new-listing__purpose-label">
+                <span class="p-new-listing__purpose-emoji">🔑</span>
+                <span class="p-new-listing__purpose-text">للإيجار</span>
+              </label>
+            </div>
+            <div class="p-new-listing__purpose">
+              <input type="radio" name="purpose" value="sale" id="purposeSale" class="p-new-listing__purpose-input">
+              <label for="purposeSale" class="p-new-listing__purpose-label">
+                <span class="p-new-listing__purpose-emoji">💰</span>
+                <span class="p-new-listing__purpose-text">للبيع</span>
+              </label>
+            </div>
+            <div class="p-new-listing__purpose">
+              <input type="radio" name="purpose" value="exchange" id="purposeExchange" class="p-new-listing__purpose-input">
+              <label for="purposeExchange" class="p-new-listing__purpose-label">
+                <span class="p-new-listing__purpose-emoji">🔄</span>
+                <span class="p-new-listing__purpose-text">للبدل</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="p-new-listing__nav">
+            <button type="button" class="p-new-listing__btn p-new-listing__btn--next" onclick="nextStep(2)">
+              التالي
+              <svg class="p-new-listing__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- STEP 2: Details -->
+        <div class="p-new-listing__step" id="step2">
+          <div class="p-new-listing__step-header">
+            <div class="p-new-listing__step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h2 class="p-new-listing__step-title">أدخل التفاصيل</h2>
+            <p class="p-new-listing__step-desc">أضف معلومات العقار للوصول للمهتمين</p>
+          </div>
+          
+          <div class="p-new-listing__fields">
+            <!-- Location -->
+            <div class="p-new-listing__field">
+              <label class="p-new-listing__label">المنطقة</label>
+              <select class="p-new-listing__select" required>
+                <option value="">اختر المنطقة</option>
+                <option value="kuwait">مدينة الكويت</option>
+                <option value="hawalli">حولي</option>
+                <option value="salmiya">السالمية</option>
+                <option value="jahra">الجهراء</option>
+                <option value="farwaniya">الفروانية</option>
+                <option value="ahmadi">الأحمدي</option>
+                <option value="mubarak">مبارك الكبير</option>
+              </select>
+            </div>
+            
+            <!-- Price -->
+            <div class="p-new-listing__field">
+              <label class="p-new-listing__label">السعر (اختياري)</label>
+              <input type="text" class="p-new-listing__input" placeholder="مثال: 350 د.ك شهرياً">
+            </div>
+            
+            <!-- Description -->
+            <div class="p-new-listing__field">
+              <label class="p-new-listing__label">وصف الإعلان</label>
+              <textarea class="p-new-listing__textarea" placeholder="اكتب تفاصيل العقار: عدد الغرف، المساحة، المميزات..." maxlength="400" id="descTextarea"></textarea>
+              <div class="p-new-listing__counter"><span id="charCount">0</span> / 400</div>
+            </div>
+            
+            <!-- Images -->
+            <div class="p-new-listing__field">
+              <label class="p-new-listing__label">الصور (اختياري)</label>
+              <label for="imageUpload" class="p-new-listing__upload">
+                <div class="p-new-listing__upload-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <path d="m21 15-5-5L5 21"/>
+                  </svg>
+                </div>
+                <div class="p-new-listing__upload-title">اسحب الصور هنا أو اضغط للاختيار</div>
+                <div class="p-new-listing__upload-hint">PNG, JPG حتى 10 صور</div>
+                <input type="file" class="p-new-listing__upload-input" id="imageUpload" accept="image/*" multiple>
+              </label>
+            </div>
+          </div>
+          
+          <div class="p-new-listing__nav">
+            <button type="button" class="p-new-listing__btn p-new-listing__btn--back" onclick="prevStep(1)">
+              <svg class="p-new-listing__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+              السابق
+            </button>
+            <button type="button" class="p-new-listing__btn p-new-listing__btn--next" onclick="nextStep(3)">
+              التالي
+              <svg class="p-new-listing__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- STEP 3: Contact & Publish -->
+        <div class="p-new-listing__step" id="step3">
+          <div class="p-new-listing__step-header">
+            <div class="p-new-listing__step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </div>
+            <h2 class="p-new-listing__step-title">معلومات التواصل</h2>
+            <p class="p-new-listing__step-desc">أدخل رقم هاتفك للتواصل مع المهتمين</p>
+          </div>
+          
+          <div class="p-new-listing__fields">
+            <!-- Phone -->
+            <div class="p-new-listing__field">
+              <label class="p-new-listing__label">رقم الموبايل</label>
+              <div class="p-new-listing__phone-wrapper">
+                <div class="p-new-listing__phone-code">
+                  <div class="p-new-listing__flag">
+                    <img src="../assets/img/kwt.png" alt="Kuwait">
+                  </div>
+                  +965
+                </div>
+                <input type="tel" class="p-new-listing__input p-new-listing__phone-input" placeholder="5xxx xxxx" inputmode="numeric" required>
+              </div>
+            </div>
+            
+            <!-- Featured Upgrade -->
+            <div class="p-new-listing__featured" id="featuredToggle">
+              <div class="p-new-listing__featured-checkbox" id="featuredCheckbox">
+                <svg class="p-new-listing__featured-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div class="p-new-listing__featured-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div class="p-new-listing__featured-content">
+                <div class="p-new-listing__featured-title">إعلان مميز</div>
+                <div class="p-new-listing__featured-desc">يظهر في المقدمة لجذب انتباه أكثر</div>
+              </div>
+              <div class="p-new-listing__featured-price">18 د.ك</div>
+            </div>
+          </div>
+          
+          <div class="p-new-listing__nav">
+            <button type="button" class="p-new-listing__btn p-new-listing__btn--back" onclick="prevStep(2)">
+              <svg class="p-new-listing__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+              السابق
+            </button>
+            <button type="button" class="p-new-listing__btn p-new-listing__btn--submit" onclick="submitForm()">
+              <svg class="p-new-listing__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              نشر الإعلان
+            </button>
+          </div>
+        </div>
+        
+        <!-- Success State -->
+        <div class="p-new-listing__success" id="successState">
+          <div class="p-new-listing__success-animation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3 class="p-new-listing__success-title">تم نشر إعلانك بنجاح</h3>
+          <p class="p-new-listing__success-text">سيتم مراجعة إعلانك ونشره قريباً</p>
+          <div class="p-new-listing__success-actions">
+            <a href="index.html" class="c-btn c-btn--outline c-btn--lg">الرئيسية</a>
+            <a href="listings.html" class="c-btn c-btn--primary c-btn--lg">عرض الإعلانات</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/components/drawer.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script>
+    // Multi-step form wizard
+    let currentStep = 1;
+    
+    function updateProgress(step) {
+      // Update dots
+      for (let i = 1; i <= 3; i++) {
+        const dot = document.getElementById('dot' + i);
+        dot.classList.remove('p-new-listing__progress-dot--active', 'p-new-listing__progress-dot--done');
+        if (i < step) {
+          dot.classList.add('p-new-listing__progress-dot--done');
+          dot.innerHTML = '✓';
+        } else if (i === step) {
+          dot.classList.add('p-new-listing__progress-dot--active');
+          dot.innerHTML = i;
+        } else {
+          dot.innerHTML = i;
+        }
+      }
+      
+      // Update lines
+      for (let i = 1; i <= 2; i++) {
+        const line = document.getElementById('line' + i);
+        if (i < step) {
+          line.classList.add('p-new-listing__progress-line--done');
+        } else {
+          line.classList.remove('p-new-listing__progress-line--done');
+        }
+      }
+    }
+    
+    function showStep(step) {
+      // Hide all steps
+      document.querySelectorAll('.p-new-listing__step').forEach(el => {
+        el.classList.remove('p-new-listing__step--active');
+      });
+      
+      // Show current step
+      document.getElementById('step' + step).classList.add('p-new-listing__step--active');
+      
+      // Update progress
+      updateProgress(step);
+      
+      // Scroll to top of card
+      document.getElementById('formCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    
+    function nextStep(step) {
+      currentStep = step;
+      showStep(step);
+    }
+    
+    function prevStep(step) {
+      currentStep = step;
+      showStep(step);
+    }
+    
+    function submitForm() {
+      // Hide all steps
+      document.querySelectorAll('.p-new-listing__step').forEach(el => {
+        el.classList.remove('p-new-listing__step--active');
+      });
+      
+      // Show success
+      document.getElementById('successState').classList.add('p-new-listing__success--visible');
+      
+      // Update progress to complete
+      updateProgress(4);
+    }
+    
+    // Character counter
+    const textarea = document.getElementById('descTextarea');
+    const counter = document.getElementById('charCount');
+    
+    if (textarea && counter) {
+      textarea.addEventListener('input', function() {
+        counter.textContent = this.value.length;
+      });
+    }
+    
+    // Featured toggle
+    const featuredToggle = document.getElementById('featuredToggle');
+    if (featuredToggle) {
+      featuredToggle.addEventListener('click', function() {
+        this.classList.toggle('p-new-listing__featured--active');
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+/**
+ * ============================================================
+ * DALEL - Listings Page Search Styles (Matching Home Design)
+ * ============================================================
+ */
+
+/* Search Container */
+.p-search {
+    background: var(--c-bg-white);
+    border-radius: var(--radius-xl, 16px);
+    padding: var(--space-32, 32px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--space-32, 32px);
+    position: relative;
+    z-index: 100;
+}
+
+/* Post Type Tabs */
+.p-search__tabs {
+    display: flex;
+    gap: var(--space-12, 12px);
+    margin-bottom: var(--space-24, 24px);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.p-search__tab {
+    padding: var(--space-12, 12px) var(--space-24, 24px);
+    background: var(--c-bg-white);
+    border: 2px solid var(--c-border);
+    border-radius: var(--radius-full, 50px);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.p-search__tab:hover {
+    border-color: var(--c-primary);
+    color: var(--c-primary);
+    background: var(--c-primary-light, #e8f4f8);
+}
+
+.p-search__tab--active {
+    background: var(--c-primary);
+    border-color: var(--c-primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(var(--c-primary-rgb, 74, 144, 166), 0.3);
+}
+
+/* Main Search Row */
+.p-search__row {
+    display: flex;
+    gap: var(--space-12, 12px);
+    align-items: stretch;
+}
+
+/* Search Input */
+.p-search__input-wrap {
+    flex: 2;
+    min-width: 250px;
+    position: relative;
+}
+
+.p-search__input {
+    width: 100%;
+    height: 52px;
+    padding: 0 var(--space-20, 20px);
+    padding-right: 48px;
+    border: 2px solid var(--c-border);
+    border-radius: var(--radius-lg, 12px);
+    font-size: 15px;
+    background: var(--c-bg);
+    transition: all 0.2s ease;
+}
+
+.p-search__input:focus {
+    border-color: var(--c-primary);
+    outline: none;
+    background: var(--c-bg-white);
+    box-shadow: 0 0 0 4px rgba(var(--c-primary-rgb, 74, 144, 166), 0.1);
+}
+
+.p-search__input::placeholder {
+    color: var(--c-text-muted);
+}
+
+.p-search__input-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    color: var(--c-text-muted);
+    pointer-events: none;
+}
+
+/* Dropdown Base */
+.p-search__dropdown {
+    position: relative;
+    flex: 1;
+    min-width: 160px;
+}
+
+.p-search__dropdown-btn {
+    width: 100%;
+    height: 52px;
+    padding: 0 var(--space-16, 16px);
+    border: 2px solid var(--c-border);
+    border-radius: var(--radius-lg, 12px);
+    background: var(--c-bg);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--c-text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8, 8px);
+    transition: all 0.2s ease;
+    text-align: right;
+}
+
+.p-search__dropdown-btn:hover {
+    border-color: var(--c-primary);
+}
+
+.p-search__dropdown--active .p-search__dropdown-btn {
+    border-color: var(--c-primary);
+    border-radius: var(--radius-lg, 12px) var(--radius-lg, 12px) 0 0;
+    background: var(--c-bg-white);
+}
+
+/* Dropdown Arrow Icon */
+.p-search__dropdown-btn > svg {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    color: var(--c-text-muted);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.p-search__dropdown--active .p-search__dropdown-btn > svg {
+    transform: rotate(180deg);
+    color: var(--c-primary);
+}
+
+/* Dropdown Menu */
+.p-search__dropdown-menu {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    right: 0;
+    background: var(--c-bg-white);
+    border: 2px solid var(--c-primary);
+    border-top: none;
+    border-radius: 0 0 var(--radius-lg, 12px) var(--radius-lg, 12px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    display: none;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.p-search__dropdown--active .p-search__dropdown-menu {
+    display: block;
+}
+
+.p-search__dropdown-search {
+    padding: var(--space-12, 12px);
+    border-bottom: 1px solid var(--c-border);
+    background: var(--c-bg);
+}
+
+.p-search__dropdown-search input {
+    width: 100%;
+    padding: var(--space-10, 10px) var(--space-14, 14px);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-md, 8px);
+    font-size: 14px;
+    background: var(--c-bg-white);
+}
+
+.p-search__dropdown-search input:focus {
+    outline: none;
+    border-color: var(--c-primary);
+}
+
+.p-search__dropdown-list {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+/* Dropdown Items */
+.p-search__dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-10, 10px);
+    width: 100%;
+    padding: var(--space-12, 12px) var(--space-16, 16px);
+    background: none;
+    border: none;
+    text-align: right;
+    font-size: 14px;
+    color: var(--c-text);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.p-search__dropdown-item:hover {
+    background: var(--c-primary-light, #e8f4f8);
+}
+
+.p-search__dropdown-item--active {
+    background: var(--c-primary-light, #e8f4f8);
+    color: var(--c-primary);
+    font-weight: 600;
+}
+
+/* Location Multi-Select */
+.p-search__location-wrap {
+    flex: 1.5;
+    min-width: 220px;
+}
+
+.p-search__location-btn {
+    width: 100%;
+    min-height: 52px;
+    padding: var(--space-10, 10px) var(--space-16, 16px);
+    border: 2px solid var(--c-border);
+    border-radius: var(--radius-lg, 12px);
+    background: var(--c-bg);
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8, 8px);
+    flex-wrap: wrap;
+    transition: all 0.2s ease;
+}
+
+.p-search__location-btn:hover {
+    border-color: var(--c-primary);
+}
+
+.p-search__location-wrap.p-search__dropdown--active .p-search__location-btn {
+    border-color: var(--c-primary);
+    border-radius: var(--radius-lg, 12px) var(--radius-lg, 12px) 0 0;
+    background: var(--c-bg-white);
+}
+
+.p-search__location-btn > svg {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    color: var(--c-text-muted);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.p-search__location-wrap.p-search__dropdown--active .p-search__location-btn > svg {
+    transform: rotate(180deg);
+    color: var(--c-primary);
+}
+
+.p-search__location-placeholder {
+    color: var(--c-text-muted);
+    font-weight: 500;
+}
+
+.p-search__location-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6, 6px);
+    flex: 1;
+    align-items: center;
+}
+
+/* Location Tags */
+.p-search__location-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-6, 6px);
+    padding: var(--space-6, 6px) var(--space-12, 12px);
+    background: var(--c-primary-light, #e8f4f8);
+    color: var(--c-primary-dark, #2a5a6a);
+    border-radius: var(--radius-full, 50px);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.p-search__location-tag button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--c-primary-dark, #2a5a6a);
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.p-search__location-tag button:hover {
+    opacity: 1;
+}
+
+.p-search__location-tag svg {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* Location Hierarchy */
+.p-search__location-state {
+    font-weight: 700;
+    background: var(--c-bg);
+    padding: var(--space-14, 14px) var(--space-16, 16px) !important;
+    border-bottom: 1px solid var(--c-border);
+    color: var(--c-text);
+}
+
+.p-search__location-state:hover {
+    background: var(--c-primary-light, #e8f4f8);
+}
+
+.p-search__location-city {
+    padding-right: var(--space-36, 36px) !important;
+    font-size: 13px;
+    color: var(--c-text-muted);
+}
+
+.p-search__location-city:hover,
+.p-search__location-city.p-search__dropdown-item--active {
+    color: var(--c-primary);
+}
+
+/* Checkbox styling */
+.p-search__dropdown-item .location-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--c-primary);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.p-search__submit-btn {
+    height: 52px;
+    padding: 0 var(--space-36, 36px);
+    background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-primary-dark, #2a5a6a) 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-lg, 12px);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8, 8px);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(var(--c-primary-rgb, 74, 144, 166), 0.3);
+}
+
+.p-search__submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(var(--c-primary-rgb, 74, 144, 166), 0.4);
+}
+
+.p-search__submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .p-search__row {
+        flex-wrap: wrap;
+    }
+    
+    .p-search__input-wrap {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    
+    .p-search__dropdown,
+    .p-search__location-wrap {
+        flex: 1 1 calc(50% - 6px);
+        min-width: calc(50% - 6px);
+    }
+    
+    .p-search__submit-btn {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .p-search {
+        padding: var(--space-20, 20px);
+        border-radius: var(--radius-lg, 12px);
+    }
+    
+    .p-search__row {
+        flex-direction: column;
+        gap: var(--space-10, 10px);
+    }
+    
+    .p-search__dropdown,
+    .p-search__input-wrap,
+    .p-search__location-wrap {
+        width: 100%;
+        min-width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    .p-search__tabs {
+        justify-content: center;
+    }
+    
+    .p-search__tab {
+        padding: var(--space-10, 10px) var(--space-18, 18px);
+        font-size: 14px;
+    }
+    
+    .p-search__input,
+    .p-search__dropdown-btn,
+    .p-search__location-btn {
+        height: 48px;
+        min-height: 48px;
+    }
+    
+    .p-search__submit-btn {
+        height: 48px;
+    }
+}

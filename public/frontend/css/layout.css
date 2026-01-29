@@ -1,0 +1,229 @@
+/**
+ * ============================================================
+ * DALEL - Layout Styles
+ * Container, grid, sections, responsive breakpoints
+ * ============================================================
+ */
+
+/* ========== Container ========== */
+.l-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-20);
+}
+
+/* ========== Page Layouts ========== */
+.l-page {
+  min-height: 100vh;
+}
+
+.l-page--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area that grows */
+.l-main {
+  flex: 1;
+}
+
+.l-main--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-32) var(--space-16);
+}
+
+/* ========== Grid Systems ========== */
+
+/* Listings grid - responsive 1/2/3 columns */
+.l-listings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-20);
+}
+
+/* Stacked listings (vertical list) */
+.l-listings-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+/* Footer grid */
+.l-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-40);
+}
+
+/* ========== Section ========== */
+.l-section {
+  padding: var(--space-48) 0;
+}
+
+.l-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-28);
+}
+
+.l-section__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+}
+
+.l-section__link {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--c-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.l-section__link-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ========== Page Header ========== */
+.l-page-header {
+  margin-bottom: var(--space-24);
+}
+
+.l-page-header__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-4);
+}
+
+.l-page-header__count {
+  font-size: var(--font-size-base);
+  color: var(--c-muted);
+}
+
+/* ========== Auth Layout ========== */
+.l-auth-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ========== Form Container ========== */
+.l-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========== Section Count ========== */
+.l-section__count {
+  font-size: var(--font-size-base);
+  color: var(--c-text-muted);
+  font-weight: var(--font-weight-normal);
+  margin-right: auto;
+  margin-left: var(--space-12);
+}
+
+/* ========== Load More ========== */
+.l-load-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-32) 0;
+}
+
+.l-load-more__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-14) var(--space-32);
+  background: var(--c-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  min-width: 180px;
+}
+
+.l-load-more__btn:hover {
+  background: var(--c-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.l-load-more__btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.l-load-more__spinner {
+  display: inline-flex;
+  align-items: center;
+}
+
+.l-load-more__spinner-icon {
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ========== Responsive Breakpoints ========== */
+
+/* Tablet (max 1024px) */
+@media (max-width: 1024px) {
+  .l-container {
+    padding: 0 var(--space-16);
+  }
+  
+  .l-listings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .l-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-32);
+  }
+}
+
+/* Mobile (max 640px) */
+@media (max-width: 640px) {
+  .l-section {
+    padding: var(--space-32) 0;
+  }
+  
+  .l-section__title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .l-listings-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
+  }
+  
+  .l-page-header__title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .l-footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-32);
+  }
+  
+  .l-auth-container {
+    width: 100%;
+  }
+}
+

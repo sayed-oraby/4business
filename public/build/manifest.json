@@ -1,0 +1,164 @@
+{
+  "Modules/Authorization/resources/assets/js/authorization.js": {
+    "file": "assets/authorization-CnPSjQpe.js",
+    "name": "authorization",
+    "src": "Modules/Authorization/resources/assets/js/authorization.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Banner/resources/assets/js/banner.js": {
+    "file": "assets/banner-DLNUBxCb.js",
+    "name": "banner",
+    "src": "Modules/Banner/resources/assets/js/banner.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Blog/resources/assets/js/blog.js": {
+    "file": "assets/blog-DlZfQdBH.js",
+    "name": "blog",
+    "src": "Modules/Blog/resources/assets/js/blog.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Brand/resources/assets/js/brand.js": {
+    "file": "assets/brand-xNjlSWTL.js",
+    "name": "brand",
+    "src": "Modules/Brand/resources/assets/js/brand.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Category/resources/assets/js/category.js": {
+    "file": "assets/category-DgDSUtvH.js",
+    "name": "category",
+    "src": "Modules/Category/resources/assets/js/category.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Order/resources/assets/js/order-edit.js": {
+    "file": "assets/order-edit-Bj1bGd0N.js",
+    "name": "order-edit",
+    "src": "Modules/Order/resources/assets/js/order-edit.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Order/resources/assets/js/order-show.js": {
+    "file": "assets/order-show-DDwGvLPs.js",
+    "name": "order-show",
+    "src": "Modules/Order/resources/assets/js/order-show.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Order/resources/assets/js/orders.js": {
+    "file": "assets/orders-CUm_E0Gd.js",
+    "name": "orders",
+    "src": "Modules/Order/resources/assets/js/orders.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Order/resources/assets/js/statuses.js": {
+    "file": "assets/statuses-CxDvyatM.js",
+    "name": "statuses",
+    "src": "Modules/Order/resources/assets/js/statuses.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Page/resources/assets/js/page.js": {
+    "file": "assets/page-C6nChAp-.js",
+    "name": "page",
+    "src": "Modules/Page/resources/assets/js/page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Post/resources/assets/js/package.js": {
+    "file": "assets/package-yV0HLLMl.js",
+    "name": "package",
+    "src": "Modules/Post/resources/assets/js/package.js",
+    "isEntry": true
+  },
+  "Modules/Post/resources/assets/js/post.js": {
+    "file": "assets/post-BE_1FD5e.js",
+    "name": "post",
+    "src": "Modules/Post/resources/assets/js/post.js",
+    "isEntry": true
+  },
+  "Modules/Post/resources/assets/js/type.js": {
+    "file": "assets/type-CUTUwZKZ.js",
+    "name": "type",
+    "src": "Modules/Post/resources/assets/js/type.js",
+    "isEntry": true
+  },
+  "Modules/Product/resources/assets/js/product.js": {
+    "file": "assets/product-DY7KOR9P.js",
+    "name": "product",
+    "src": "Modules/Product/resources/assets/js/product.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "Modules/Setting/resources/assets/js/settings.js": {
+    "file": "assets/settings-V59lVfps.js",
+    "name": "settings",
+    "src": "Modules/Setting/resources/assets/js/settings.js",
+    "isEntry": true
+  },
+  "Modules/User/resources/assets/js/users.js": {
+    "file": "assets/users-BIfnMaXL.js",
+    "name": "users",
+    "src": "Modules/User/resources/assets/js/users.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js"
+    ]
+  },
+  "_index-B9ygI19o.js": {
+    "file": "assets/index-B9ygI19o.js",
+    "name": "index"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BS93cS_w.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BONvsY8p.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_index-B9ygI19o.js",
+      "Modules/Banner/resources/assets/js/banner.js",
+      "Modules/Page/resources/assets/js/page.js",
+      "Modules/Blog/resources/assets/js/blog.js",
+      "Modules/Category/resources/assets/js/category.js",
+      "Modules/Brand/resources/assets/js/brand.js",
+      "Modules/Product/resources/assets/js/product.js",
+      "Modules/Order/resources/assets/js/orders.js",
+      "Modules/Order/resources/assets/js/statuses.js"
+    ]
+  }
+}

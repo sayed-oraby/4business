@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الشروط والأحكام - دليل العقار">
+  <title>الشروط والأحكام - دليل العقار</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/static.css">
+</head>
+<body class="page-terms">
+  <!-- ========== NAVBAR ========== -->
+  <nav class="c-navbar">
+    <div class="l-container c-navbar__inner">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+
+      <div class="c-navbar__links">
+        <a href="index.html" class="c-navbar__link">الرئيسية</a>
+        <a href="listings.html" class="c-navbar__link">عقارات الكويت</a>
+        <a href="agents.html" class="c-navbar__link">المكاتب</a>
+        <a href="login.html" class="c-navbar__link">دخول</a>
+        <a href="register.html" class="c-navbar__link">تسجيل</a>
+      </div>
+
+      <div class="c-navbar__cta">
+        <a href="#" class="c-navbar__lang">EN</a>
+        <a href="new-listing.html" class="c-btn c-btn--ghost c-btn--sm">
+          <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+         أضافه اعلان جديد
+        </a>
+      </div>
+
+      <button class="c-navbar__hamburger" id="openDrawer" aria-label="القائمة">
+        <svg class="c-navbar__hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE DRAWER ========== -->
+  <div class="c-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="c-drawer" id="drawer">
+    <div class="c-drawer__header">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+      <button class="c-drawer__close" id="closeDrawer" aria-label="إغلاق">
+        <svg class="c-drawer__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="c-drawer__nav">
+      <a href="index.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        الرئيسية
+      </a>
+      <a href="terms.html" class="c-drawer__link c-drawer__link--active">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+        </svg>
+        الشروط والأحكام
+      </a>
+    </nav>
+    
+    <div class="c-drawer__cta">
+      <a href="new-listing.html" class="c-btn c-btn--primary c-btn--block">
+        <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+       أضافه اعلان جديد
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="p-static">
+    <div class="l-container">
+      <div class="p-static__header">
+        <h1 class="p-static__title">الشروط والأحكام</h1>
+        <p class="p-static__subtitle">يرجى قراءة هذه الشروط بعناية قبل استخدام المنصة</p>
+      </div>
+
+      <div class="p-static__content">
+        <div class="p-static__card">
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">1. مقدمة</h2>
+            <div class="p-static__text">
+              <p>مرحباً بك في دليل العقار. باستخدامك لهذا الموقع، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا كنت لا توافق على أي جزء من هذه الشروط، يرجى عدم استخدام الموقع.</p>
+            </div>
+          </div>
+
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">2. استخدام الموقع</h2>
+            <div class="p-static__text">
+              <p>يُسمح لك باستخدام هذا الموقع للأغراض القانونية فقط وبطريقة لا تنتهك حقوق الآخرين أو تقيد استخدامهم للموقع. يُحظر عليك:</p>
+              <ul class="p-static__list">
+                <li>نشر محتوى غير قانوني أو مسيء أو تشهيري</li>
+                <li>انتحال شخصية أي شخص أو كيان آخر</li>
+                <li>نشر إعلانات وهمية أو مضللة</li>
+                <li>محاولة الوصول غير المصرح به إلى أنظمة الموقع</li>
+                <li>استخدام الموقع لأي غرض غير قانوني</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">3. الإعلانات العقارية</h2>
+            <div class="p-static__text">
+              <p>عند نشر إعلان عقاري على الموقع، فإنك تؤكد أن:</p>
+              <ul class="p-static__list">
+                <li>المعلومات المقدمة صحيحة ودقيقة</li>
+                <li>لديك الحق في الإعلان عن هذا العقار</li>
+                <li>الصور المرفقة حقيقية وتمثل العقار المعلن عنه</li>
+                <li>الأسعار المذكورة حقيقية وغير مضللة</li>
+              </ul>
+              <p>نحتفظ بالحق في إزالة أي إعلان يخالف هذه الشروط دون إشعار مسبق.</p>
+            </div>
+          </div>
+
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">4. الخصوصية</h2>
+            <div class="p-static__text">
+              <p>نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. للمزيد من المعلومات حول كيفية جمع واستخدام بياناتك، يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</p>
+            </div>
+          </div>
+
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">5. إخلاء المسؤولية</h2>
+            <div class="p-static__text">
+              <p>دليل العقار هو منصة وسيطة تربط بين المعلنين والباحثين عن العقارات. نحن لسنا طرفاً في أي معاملة عقارية ولا نتحمل المسؤولية عن:</p>
+              <ul class="p-static__list">
+                <li>دقة أو صحة المعلومات المنشورة من قبل المعلنين</li>
+                <li>جودة أو حالة العقارات المعلن عنها</li>
+                <li>أي نزاعات قد تنشأ بين الأطراف</li>
+                <li>أي خسائر ناتجة عن استخدام الموقع</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">6. تعديل الشروط</h2>
+            <div class="p-static__text">
+              <p>نحتفظ بالحق في تعديل هذه الشروط في أي وقت. ستكون التعديلات سارية فور نشرها على الموقع. استمرارك في استخدام الموقع بعد إجراء التعديلات يعني موافقتك على الشروط المحدثة.</p>
+            </div>
+          </div>
+
+          <div class="p-static__section">
+            <h2 class="p-static__section-title">7. التواصل</h2>
+            <div class="p-static__text">
+              <p>إذا كان لديك أي استفسارات حول هذه الشروط والأحكام، يرجى التواصل معنا عبر صفحة <a href="contact.html" style="color: var(--primary);">اتصل بنا</a>.</p>
+              <p style="margin-top: var(--space-16); color: var(--muted); font-size: var(--font-size-sm);">آخر تحديث: ديسمبر 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="l-footer-grid">
+        <div>
+          <div class="c-footer__brand">
+            <img src="../assets/img/logo.png" alt="دليل العقار" class="c-footer__logo-img">
+          </div>
+          <p class="c-footer__desc">منصتك الأولى للبحث عن العقارات في الكويت.</p>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">روابط سريعة</h4>
+          <div class="c-footer__links">
+            <a href="index.html" class="c-footer__link">الرئيسية</a>
+            <a href="listings.html" class="c-footer__link">عقارات الكويت</a>
+            <a href="agents.html" class="c-footer__link">المكاتب العقارية</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">تواصل معنا</h4>
+          <div class="c-footer__links">
+            <a href="about.html" class="c-footer__link">من نحن</a>
+            <a href="contact.html" class="c-footer__link">اتصل بنا</a>
+            <a href="terms.html" class="c-footer__link">الشروط والأحكام</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="c-footer__bottom">
+        <p class="c-footer__copy">© 2024 دليل العقار. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/components/drawer.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
+

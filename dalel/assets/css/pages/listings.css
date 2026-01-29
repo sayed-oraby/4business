@@ -1,0 +1,15 @@
+/**
+ * ============================================================
+ * DALEL - Listings Page Styles
+ * ============================================================
+ */
+
+.p-listings {
+  padding-bottom: var(--space-48);
+}
+
+.p-listings__more {
+  margin-top: var(--space-32);
+  text-align: center;
+}
+

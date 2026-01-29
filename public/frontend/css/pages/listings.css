@@ -1,0 +1,87 @@
+/**
+ * ============================================================
+ * DALEL - Listings Page Styles
+ * ============================================================
+ */
+
+.p-listings {
+    padding-bottom: var(--space-48);
+}
+
+.p-listings__more {
+    margin-top: var(--space-32);
+    text-align: center;
+}
+
+/* Pagination */
+.p-listings__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.c-pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    direction: ltr;
+    /* Ensure numbers run left-to-right */
+}
+
+.c-pagination__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.c-pagination__item:hover:not(.c-pagination__item--disabled):not(.c-pagination__item--active) {
+    border-color: var(--c-primary);
+    color: var(--c-primary);
+    background: var(--c-primary-light);
+}
+
+.c-pagination__item--active {
+    background: var(--c-primary);
+    border-color: var(--c-primary);
+    color: #fff;
+}
+
+.c-pagination__item--disabled {
+    opacity: 0.5;
+    cursor: default;
+    background: #f8fafc;
+}
+
+/* RTL adjustment: If the page is RTL, we might want to rotate arrows if they are directional icons */
+[dir="rtl"] .c-pagination__item svg {
+    /* If the icon is an arrow pointing left/right, flipping it makes sense for 'Next' vs 'Prev' relative to flow */
+    transform: rotate(180deg);
+}
+
+#listingsGrid .c-card__img,
+.l-listings-stack .c-card__img {
+    max-width: 200px !important;
+}
+
+/* Mobile Pagination */
+@media (max-width: 700px) {
+
+    #listingsGrid .c-card__img,
+    .l-listings-stack .c-card__img {
+        max-width: 100% !important;
+    }
+
+    .post_end_date {
+        display: block;
+    }
+}

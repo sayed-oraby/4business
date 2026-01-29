@@ -1,0 +1,1106 @@
+[
+    {
+        "code": "KW-KWT",
+        "state_code": "KU",
+        "name_en": "Kuwait City",
+        "name_ar": "مدينة الكويت",
+        "lat": 29.36972,
+        "lng": 47.97833
+    },
+    {
+        "code": "KW-SHW",
+        "state_code": "KU",
+        "name_en": "Shuwaikh",
+        "name_ar": "الشويخ",
+        "lat": 29.35500,
+        "lng": 47.95583
+    },
+    {
+        "code": "KW-MIR",
+        "state_code": "KU",
+        "name_en": "Mirqab",
+        "name_ar": "المرقاب",
+        "lat": 29.36614,
+        "lng": 47.98369
+    },
+    {
+        "code": "KW-ABD",
+        "state_code": "KU",
+        "name_en": "Abdulla Al-Salem",
+        "name_ar": "ضاحية عبد الله السالم",
+        "lat": 29.35250,
+        "lng": 47.98220
+    },
+    {
+        "code": "KW-ADA",
+        "state_code": "KU",
+        "name_en": "Adailiya",
+        "name_ar": "العديلية",
+        "lat": 29.32655,
+        "lng": 47.98141
+    },
+    {
+        "code": "KW-BNA",
+        "state_code": "KU",
+        "name_en": "Bnaid Al-Qar",
+        "name_ar": "بنيد القار",
+        "lat": 29.36700,
+        "lng": 48.00000
+    },
+    {
+        "code": "KW-DAI",
+        "state_code": "KU",
+        "name_en": "Daiya",
+        "name_ar": "الدعية",
+        "lat": 29.36972,
+        "lng": 48.00139
+    },
+    {
+        "code": "KW-DAS",
+        "state_code": "KU",
+        "name_en": "Dasma",
+        "name_ar": "الدسمة",
+        "lat": 29.36500,
+        "lng": 48.00139
+    },
+    {
+        "code": "KW-DOH",
+        "state_code": "KU",
+        "name_en": "Doha",
+        "name_ar": "الدوحة",
+        "lat": 29.38528,
+        "lng": 47.84222
+    },
+    {
+        "code": "KW-DOA",
+        "state_code": "KU",
+        "name_en": "Doha Port",
+        "name_ar": "ميناء الدوحة",
+        "lat": 29.35250,
+        "lng": 47.92528
+    },
+    {
+        "code": "KW-FAI",
+        "state_code": "KU",
+        "name_en": "Faiha",
+        "name_ar": "الفيحاء",
+        "lat": 29.35528,
+        "lng": 47.98139
+    },
+    {
+        "code": "KW-FAL",
+        "state_code": "KU",
+        "name_en": "Failaka Island",
+        "name_ar": "فيلكا",
+        "lat": 29.43000,
+        "lng": 48.33000
+    },
+    {
+        "code": "KW-GRA",
+        "state_code": "KU",
+        "name_en": "Granada",
+        "name_ar": "غرناطة",
+        "lat": 29.33750,
+        "lng": 47.98667
+    },
+    {
+        "code": "KW-JIB",
+        "state_code": "KU",
+        "name_en": "Jibla",
+        "name_ar": "جِبْلَة",
+        "lat": 29.36917,
+        "lng": 47.96472
+    },
+    {
+        "code": "KW-KAI",
+        "state_code": "KU",
+        "name_en": "Kaifan",
+        "name_ar": "كيفان",
+        "lat": 29.35722,
+        "lng": 47.95861
+    },
+    {
+        "code": "KW-KHA",
+        "state_code": "KU",
+        "name_en": "Khaldiya",
+        "name_ar": "الخالدية",
+        "lat": 29.33722,
+        "lng": 47.96528
+    },
+    {
+        "code": "KW-MAN",
+        "state_code": "KU",
+        "name_en": "Mansouriya",
+        "name_ar": "المنصورية",
+        "lat": 29.35611,
+        "lng": 47.99361
+    },
+    {
+        "code": "KW-MIS",
+        "state_code": "KU",
+        "name_en": "Mischan Island",
+        "name_ar": "جزيرة ميشان",
+        "lat": 29.26500,
+        "lng": 47.84917
+    },
+    {
+        "code": "KW-NAH",
+        "state_code": "KU",
+        "name_en": "Nahdha",
+        "name_ar": "النهضة",
+        "lat": 29.35306,
+        "lng": 47.80000
+    },
+    {
+        "code": "KW-NOR",
+        "state_code": "KU",
+        "name_en": "North West Sulaibikhat",
+        "name_ar": "شمال غرب الصليبيخات",
+        "lat": 29.35306,
+        "lng": 47.80000
+    },
+    {
+        "code": "KW-NUZ",
+        "state_code": "KU",
+        "name_en": "Nuzha",
+        "name_ar": "النزهة",
+        "lat": 29.35417,
+        "lng": 47.96722
+    },
+    {
+        "code": "KW-OUH",
+        "state_code": "KU",
+        "name_en": "Ouha Island",
+        "name_ar": "جزيرة أوها",
+        "lat": 29.40000,
+        "lng": 48.93333
+    },
+    {
+        "code": "KW-QAD",
+        "state_code": "KU",
+        "name_en": "Qadsiya",
+        "name_ar": "القادسية",
+        "lat": 29.33722,
+        "lng": 47.97750
+    },
+    {
+        "code": "KW-QOR",
+        "state_code": "KU",
+        "name_en": "Qortuba",
+        "name_ar": "قرطبة",
+        "lat": 29.33778,
+        "lng": 47.97194
+    },
+    {
+        "code": "KW-RAW",
+        "state_code": "KU",
+        "name_en": "Rawda",
+        "name_ar": "الروضة",
+        "lat": 29.32972,
+        "lng": 47.99861
+    },
+    {
+        "code": "KW-SHA",
+        "state_code": "KU",
+        "name_en": "Shamiya",
+        "name_ar": "الشامية",
+        "lat": 29.35778,
+        "lng": 47.96000
+    },
+    {
+        "code": "KW-SHR",
+        "state_code": "KU",
+        "name_en": "Sharq",
+        "name_ar": "شرق",
+        "lat": 29.37500,
+        "lng": 47.97600
+    },
+    {
+        "code": "KW-SUR",
+        "state_code": "KU",
+        "name_en": "Surra",
+        "name_ar": "السرة",
+        "lat": 29.26917,
+        "lng": 47.97806
+    },
+    {
+        "code": "KW-UMM",
+        "state_code": "KU",
+        "name_en": "Umm an Namil Island",
+        "name_ar": "جزيرة ام النمل",
+        "lat": 29.39583,
+        "lng": 47.84028
+    },
+    {
+        "code": "KW-YAR",
+        "state_code": "KU",
+        "name_en": "Yarmouk",
+        "name_ar": "اليرموك",
+        "lat": 29.33750,
+        "lng": 47.98694
+    },
+    {
+        "code": "KW-SHA3",
+        "state_code": "KU",
+        "name_en": "Shaab",
+        "name_ar": "الشعب",
+        "lat": 29.36667,
+        "lng": 48.00000
+    },
+    {
+        "code": "KW-SUL4",
+        "state_code": "KU",
+        "name_en": "Sulaibikhat",
+        "name_ar": "الصليبيخات",
+        "lat": 29.35306,
+        "lng": 47.80000
+    },
+    {
+        "code": "KW-SAW",
+        "state_code": "KU",
+        "name_en": "Sawābir",
+        "name_ar": "الصوابر",
+        "lat": 29.36000,
+        "lng": 47.99000
+    },
+    {
+        "code": "KW-QAI",
+        "state_code": "KU",
+        "name_en": "Qairawān",
+        "name_ar": "القيروان",
+        "lat": 29.34000,
+        "lng": 47.98000
+    },
+    {
+        "code": "KW-DAS2",
+        "state_code": "KU",
+        "name_en": "Dasman",
+        "name_ar": "دسمان",
+        "lat": 29.37500,
+        "lng": 47.98000
+    },
+    {
+        "code": "KW-SAL3",
+        "state_code": "KU",
+        "name_en": "Salhiya",
+        "name_ar": "صالحية",
+        "lat": 29.37000,
+        "lng": 47.98500
+    },
+    {
+        "code": "KW-ABA",
+        "state_code": "JA",
+        "name_en": "Abdali",
+        "name_ar": "العبدلي",
+        "lat": 30.04219,
+        "lng": 47.72205
+    },
+    {
+        "code": "KW-AMG",
+        "state_code": "JA",
+        "name_en": "Amghara Industrial",
+        "name_ar": "أمغرة",
+        "lat": 29.29528,
+        "lng": 47.81500
+    },
+    {
+        "code": "KW-BAA",
+        "state_code": "JA",
+        "name_en": "Bar Al-Jahra",
+        "name_ar": "بر الجهراء",
+        "lat": 29.33750,
+        "lng": 47.65806
+    },
+    {
+        "code": "KW-BAH",
+        "state_code": "JA",
+        "name_en": "Bahra",
+        "name_ar": "بحرة",
+        "lat": 29.66667,
+        "lng": 47.86667
+    },
+    {
+        "code": "KW-BUB",
+        "state_code": "JA",
+        "name_en": "Bubiyan Island",
+        "name_ar": "جزيرة بوبيان",
+        "lat": 29.75000,
+        "lng": 48.41667
+    },
+    {
+        "code": "KW-JAB2",
+        "state_code": "JA",
+        "name_en": "Jaber Al-Ahmad",
+        "name_ar": "جابر الأحمد",
+        "lat": 29.33306,
+        "lng": 47.74528
+    },
+    {
+        "code": "KW-JAH",
+        "state_code": "JA",
+        "name_en": "Jahra",
+        "name_ar": "الجهراء",
+        "lat": 29.33750,
+        "lng": 47.65806
+    },
+    {
+        "code": "KW-JAR",
+        "state_code": "JA",
+        "name_en": "Jahra Industrial Herafiya",
+        "name_ar": "الجهراء الصناعية الحرفية",
+        "lat": 29.33750,
+        "lng": 47.68333
+    },
+    {
+        "code": "KW-KAB",
+        "state_code": "JA",
+        "name_en": "Kabd",
+        "name_ar": "كبد",
+        "lat": 29.26361,
+        "lng": 47.81889
+    },
+    {
+        "code": "KW-KAZ",
+        "state_code": "JA",
+        "name_en": "Kazma",
+        "name_ar": "كازما",
+        "lat": 29.48194,
+        "lng": 47.79194
+    },
+    {
+        "code": "KW-MUT",
+        "state_code": "JA",
+        "name_en": "Al-Mutlaa",
+        "name_ar": "المطلاع",
+        "lat": 29.37917,
+        "lng": 47.76306
+    },
+    {
+        "code": "KW-NAD",
+        "state_code": "JA",
+        "name_en": "Al-Nahda",
+        "name_ar": "النهضة",
+        "lat": 29.28306,
+        "lng": 47.79333
+    },
+    {
+        "code": "KW-NAS",
+        "state_code": "JA",
+        "name_en": "Nasseem",
+        "name_ar": "النسيم",
+        "lat": 29.35417,
+        "lng": 47.69028
+    },
+    {
+        "code": "KW-NAE",
+        "state_code": "JA",
+        "name_en": "Naeem",
+        "name_ar": "النعيم",
+        "lat": 29.33806,
+        "lng": 47.68694
+    },
+    {
+        "code": "KW-OYO",
+        "state_code": "JA",
+        "name_en": "Oyoun",
+        "name_ar": "العيون",
+        "lat": 29.37972,
+        "lng": 47.68472
+    },
+    {
+        "code": "KW-QAS",
+        "state_code": "JA",
+        "name_en": "Qasr",
+        "name_ar": "القصر",
+        "lat": 29.35444,
+        "lng": 47.67639
+    },
+    {
+        "code": "KW-SAD",
+        "state_code": "JA",
+        "name_en": "Saad Al Abdullah",
+        "name_ar": "سعد العبدالله",
+        "lat": 29.33722,
+        "lng": 47.71000
+    },
+    {
+        "code": "KW-SAL2",
+        "state_code": "JA",
+        "name_en": "Salmi",
+        "name_ar": "السالمي",
+        "lat": 29.68556,
+        "lng": 47.70944
+    },
+    {
+        "code": "KW-SHE",
+        "state_code": "JA",
+        "name_en": "Al-Sheqaya",
+        "name_ar": "الشقايه",
+        "lat": 29.29361,
+        "lng": 47.68472
+    },
+    {
+        "code": "KW-SUB",
+        "state_code": "JA",
+        "name_en": "Subiya",
+        "name_ar": "الصبية",
+        "lat": 29.58333,
+        "lng": 48.11667
+    },
+    {
+        "code": "KW-SUA",
+        "state_code": "JA",
+        "name_en": "Sulaibiya",
+        "name_ar": "الصليبية",
+        "lat": 29.29500,
+        "lng": 47.80389
+    },
+    {
+        "code": "KW-SUL2",
+        "state_code": "JA",
+        "name_en": "Sulaibiya Agricultural Area",
+        "name_ar": "الصليبية الزراعية",
+        "lat": 29.33750,
+        "lng": 47.75833
+    },
+    {
+        "code": "KW-SUL3",
+        "state_code": "JA",
+        "name_en": "Sulaibiya Residential",
+        "name_ar": "الصليبية السكنية",
+        "lat": 29.32028,
+        "lng": 47.79583
+    },
+    {
+        "code": "KW-TAI",
+        "state_code": "JA",
+        "name_en": "Taima",
+        "name_ar": "تيماء",
+        "lat": 29.34444,
+        "lng": 47.67083
+    },
+    {
+        "code": "KW-WAH",
+        "state_code": "JA",
+        "name_en": "Waha",
+        "name_ar": "الواحة",
+        "lat": 29.36528,
+        "lng": 47.68639
+    },
+    {
+        "code": "KW-WAB",
+        "state_code": "JA",
+        "name_en": "Warbah Island",
+        "name_ar": "جزيرة وربة",
+        "lat": 30.04583,
+        "lng": 48.10000
+    },
+    {
+        "code": "KW-SJA",
+        "state_code": "JA",
+        "name_en": "South Jahra",
+        "name_ar": "جنوب الجهراء",
+        "lat": 29.30000,
+        "lng": 47.70000
+    },
+    {
+        "code": "KW-HEJ",
+        "state_code": "JA",
+        "name_en": "Al-Hejan",
+        "name_ar": "الهجن",
+        "lat": 29.35000,
+        "lng": 47.75000
+    },
+    {
+        "code": "KW-AND",
+        "state_code": "FA",
+        "name_en": "Andalus",
+        "name_ar": "الأندلس",
+        "lat": 29.30028,
+        "lng": 47.94194
+    },
+    {
+        "code": "KW-ARD",
+        "state_code": "FA",
+        "name_en": "Ardiya",
+        "name_ar": "العارضية",
+        "lat": 29.29583,
+        "lng": 47.93917
+    },
+    {
+        "code": "KW-ARI",
+        "state_code": "FA",
+        "name_en": "Ardiya Herafiya",
+        "name_ar": "العارضية حرفية",
+        "lat": 29.28111,
+        "lng": 47.93333
+    },
+    {
+        "code": "KW-DAJ",
+        "state_code": "FA",
+        "name_en": "Al-Dajeej",
+        "name_ar": "الضجيج",
+        "lat": 29.28250,
+        "lng": 47.95000
+    },
+    {
+        "code": "KW-RAI",
+        "state_code": "FA",
+        "name_en": "Al-Rai",
+        "name_ar": "الري",
+        "lat": 29.30833,
+        "lng": 47.92111
+    },
+    {
+        "code": "KW-RIG",
+        "state_code": "FA",
+        "name_en": "Al-Riggai",
+        "name_ar": "الرقعي",
+        "lat": 29.31167,
+        "lng": 47.92639
+    },
+    {
+        "code": "KW-FAR",
+        "state_code": "FA",
+        "name_en": "Farwaniya",
+        "name_ar": "الفروانية",
+        "lat": 29.27750,
+        "lng": 47.95861
+    },
+    {
+        "code": "KW-FER",
+        "state_code": "FA",
+        "name_en": "Ferdous",
+        "name_ar": "الفردوس",
+        "lat": 29.29583,
+        "lng": 47.91389
+    },
+    {
+        "code": "KW-ISH",
+        "state_code": "FA",
+        "name_en": "Ishbiliya",
+        "name_ar": "اشبيلية",
+        "lat": 29.29528,
+        "lng": 47.95222
+    },
+    {
+        "code": "KW-JLB",
+        "state_code": "FA",
+        "name_en": "Jleeb Al-Shuyoukh",
+        "name_ar": "جليب الشيوخ",
+        "lat": 29.27000,
+        "lng": 47.93333
+    },
+    {
+        "code": "KW-KHA2",
+        "state_code": "FA",
+        "name_en": "Khaitan",
+        "name_ar": "خيطان",
+        "lat": 29.29250,
+        "lng": 47.96889
+    },
+    {
+        "code": "KW-OMA",
+        "state_code": "FA",
+        "name_en": "Omariya",
+        "name_ar": "العمرية",
+        "lat": 29.28194,
+        "lng": 47.94083
+    },
+    {
+        "code": "KW-RAB",
+        "state_code": "FA",
+        "name_en": "Rabiya",
+        "name_ar": "الرابية",
+        "lat": 29.29556,
+        "lng": 47.92528
+    },
+    {
+        "code": "KW-REH",
+        "state_code": "FA",
+        "name_en": "Rehab",
+        "name_ar": "الرحاب",
+        "lat": 29.26917,
+        "lng": 47.91806
+    },
+    {
+        "code": "KW-SAB4",
+        "state_code": "FA",
+        "name_en": "Sabah Al-Nasser",
+        "name_ar": "صباح الناصر",
+        "lat": 29.30306,
+        "lng": 47.91167
+    },
+    {
+        "code": "KW-SAB5",
+        "state_code": "FA",
+        "name_en": "Sabah Al-Salem University",
+        "name_ar": "جامعة صباح السالم",
+        "lat": 29.26250,
+        "lng": 47.80278
+    },
+    {
+        "code": "KW-SOT",
+        "state_code": "FA",
+        "name_en": "South Abdullah Al-Mubarak",
+        "name_ar": "جنوب عبدالله المبارك",
+        "lat": 29.24750,
+        "lng": 47.86250
+    },
+    {
+        "code": "KW-SUL",
+        "state_code": "FA",
+        "name_en": "Sulaibiya Industrial",
+        "name_ar": "الصليبية الصناعية",
+        "lat": 29.29500,
+        "lng": 47.82167
+    },
+    {
+        "code": "KW-WET",
+        "state_code": "FA",
+        "name_en": "West Abdullah Al-Mubarak",
+        "name_ar": "غرب عبدالله المبارك",
+        "lat": 29.27028,
+        "lng": 47.85806
+    },
+    {
+        "code": "KW-SHD",
+        "state_code": "FA",
+        "name_en": "Al-Shadadiya",
+        "name_ar": "الشدادية",
+        "lat": 29.28000,
+        "lng": 47.95000
+    },
+    {
+        "code": "KW-ABR",
+        "state_code": "FA",
+        "name_en": "Abraq Khaitan",
+        "name_ar": "أبرق خيطان",
+        "lat": 29.29000,
+        "lng": 47.97000
+    },
+    {
+        "code": "KW-ABB",
+        "state_code": "FA",
+        "name_en": "Abbasiya",
+        "name_ar": "عباسية",
+        "lat": 29.27500,
+        "lng": 47.96000
+    },
+    {
+        "code": "KW-BID",
+        "state_code": "HA",
+        "name_en": "Al-Bida'a",
+        "name_ar": "البدع",
+        "lat": 29.33444,
+        "lng": 48.05500
+    },
+    {
+        "code": "KW-SID",
+        "state_code": "HA",
+        "name_en": "Al-Siddiq",
+        "name_ar": "الصديق",
+        "lat": 29.28083,
+        "lng": 48.04417
+    },
+    {
+        "code": "KW-ANJ",
+        "state_code": "HA",
+        "name_en": "Anjafa",
+        "name_ar": "أنجفة",
+        "lat": 29.33306,
+        "lng": 48.04111
+    },
+    {
+        "code": "KW-BAY",
+        "state_code": "HA",
+        "name_en": "Bayan",
+        "name_ar": "بيان",
+        "lat": 29.30380,
+        "lng": 48.03570
+    },
+    {
+        "code": "KW-HAW",
+        "state_code": "HA",
+        "name_en": "Hawalli",
+        "name_ar": "حولي",
+        "lat": 29.33278,
+        "lng": 48.02861
+    },
+    {
+        "code": "KW-HIT",
+        "state_code": "HA",
+        "name_en": "Hitteen",
+        "name_ar": "حطين",
+        "lat": 29.30250,
+        "lng": 48.03194
+    },
+    {
+        "code": "KW-JAB",
+        "state_code": "HA",
+        "name_en": "Jabriya",
+        "name_ar": "الجابرية",
+        "lat": 29.33222,
+        "lng": 48.03028
+    },
+    {
+        "code": "KW-MIN",
+        "state_code": "HA",
+        "name_en": "Ministries Area",
+        "name_ar": "منطقة الوزارات",
+        "lat": 29.30694,
+        "lng": 48.02111
+    },
+    {
+        "code": "KW-MIH",
+        "state_code": "HA",
+        "name_en": "Mishrif",
+        "name_ar": "مشرف",
+        "lat": 29.29500,
+        "lng": 48.06250
+    },
+    {
+        "code": "KW-MUB",
+        "state_code": "HA",
+        "name_en": "Mubarak Al-Abdullah",
+        "name_ar": "مبارك العبدالله",
+        "lat": 29.28889,
+        "lng": 48.04861
+    },
+    {
+        "code": "KW-RUM",
+        "state_code": "HA",
+        "name_en": "Rumaithiya",
+        "name_ar": "الرميثية",
+        "lat": 29.31167,
+        "lng": 48.06639
+    },
+    {
+        "code": "KW-SAL",
+        "state_code": "HA",
+        "name_en": "Salam",
+        "name_ar": "سلام",
+        "lat": 29.29250,
+        "lng": 48.06417
+    },
+    {
+        "code": "KW-SAM",
+        "state_code": "HA",
+        "name_en": "Salmiya",
+        "name_ar": "السالمية",
+        "lat": 29.33750,
+        "lng": 48.07194
+    },
+    {
+        "code": "KW-SAW",
+        "state_code": "HA",
+        "name_en": "Salwa",
+        "name_ar": "سلوى",
+        "lat": 29.29649,
+        "lng": 48.07938
+    },
+    {
+        "code": "KW-SHA2",
+        "state_code": "HA",
+        "name_en": "Shaab",
+        "name_ar": "الشعب",
+        "lat": 29.36667,
+        "lng": 48.00000
+    },
+    {
+        "code": "KW-SHH",
+        "state_code": "HA",
+        "name_en": "Shuhada",
+        "name_ar": "الشهداء",
+        "lat": 29.28417,
+        "lng": 48.04167
+    },
+    {
+        "code": "KW-ZAH",
+        "state_code": "HA",
+        "name_en": "Zahra",
+        "name_ar": "الزهراء",
+        "lat": 29.26944,
+        "lng": 48.04611
+    },
+    {
+        "code": "KW-MID",
+        "state_code": "HA",
+        "name_en": "Maidan Hawally",
+        "name_ar": "ميدان حولي",
+        "lat": 29.33000,
+        "lng": 48.03000
+    },
+    {
+        "code": "KW-KHR",
+        "state_code": "AH",
+        "name_en": "Khairan",
+        "name_ar": "الخيران",
+        "lat": 29.10000,
+        "lng": 48.10000
+    },
+    {
+        "code": "KW-DHB",
+        "state_code": "AH",
+        "name_en": "Al-Dhabeiah",
+        "name_ar": "الضباعية",
+        "lat": 29.15000,
+        "lng": 48.05000
+    },
+    {
+        "code": "KW-WAF",
+        "state_code": "AH",
+        "name_en": "Al-Wafra",
+        "name_ar": "الوفرة",
+        "lat": 28.65000,
+        "lng": 48.08333
+    },
+    {
+        "code": "KW-WAF2",
+        "state_code": "AH",
+        "name_en": "Al-Wafra Farms",
+        "name_ar": "مزارع الوفرة",
+        "lat": 28.65000,
+        "lng": 48.10000
+    },
+    {
+        "code": "KW-SAB6",
+        "state_code": "AH",
+        "name_en": "Sabah Al-Ahmad Marine City",
+        "name_ar": "صباح الأحمد البحرية",
+        "lat": 29.05000,
+        "lng": 48.15000
+    },
+    {
+        "code": "KW-AHU",
+        "state_code": "AH",
+        "name_en": "Abu Hulaifa",
+        "name_ar": "أبو حليفة",
+        "lat": 29.11667,
+        "lng": 48.13333
+    },
+    {
+        "code": "KW-AHM",
+        "state_code": "AH",
+        "name_en": "Ahmadi",
+        "name_ar": "الأحمدي",
+        "lat": 29.07694,
+        "lng": 48.08389
+    },
+    {
+        "code": "KW-RIG",
+        "state_code": "AH",
+        "name_en": "Rigga",
+        "name_ar": "الرقه",
+        "lat": 29.10000,
+        "lng": 48.05000
+    },
+    {
+        "code": "KW-SAB7",
+        "state_code": "AH",
+        "name_en": "Alsbahya",
+        "name_ar": "الصباحية",
+        "lat": 29.08333,
+        "lng": 48.06667
+    },
+    {
+        "code": "KW-DAH",
+        "state_code": "AH",
+        "name_en": "Dahar",
+        "name_ar": "الظهر",
+        "lat": 29.09000,
+        "lng": 48.07000
+    },
+    {
+        "code": "KW-AQI",
+        "state_code": "AH",
+        "name_en": "Aqila",
+        "name_ar": "العقيلة",
+        "lat": 29.06667,
+        "lng": 48.08333
+    },
+    {
+        "code": "KW-FAH",
+        "state_code": "AH",
+        "name_en": "Fahaheel",
+        "name_ar": "الفحيحيل",
+        "lat": 29.08250,
+        "lng": 48.13028
+    },
+    {
+        "code": "KW-FIN",
+        "state_code": "AH",
+        "name_en": "Alfintas",
+        "name_ar": "الفنطاس",
+        "lat": 29.07500,
+        "lng": 48.10000
+    },
+    {
+        "code": "KW-MAN2",
+        "state_code": "AH",
+        "name_en": "Mangaf",
+        "name_ar": "المنقف",
+        "lat": 29.09583,
+        "lng": 48.12083
+    },
+    {
+        "code": "KW-MAH",
+        "state_code": "AH",
+        "name_en": "Mahbula",
+        "name_ar": "المهبولة",
+        "lat": 29.08833,
+        "lng": 48.11000
+    },
+    {
+        "code": "KW-JAL",
+        "state_code": "AH",
+        "name_en": "Jabir al-Ali",
+        "name_ar": "جابر العلي",
+        "lat": 29.07000,
+        "lng": 48.09000
+    },
+    {
+        "code": "KW-ASA",
+        "state_code": "AH",
+        "name_en": "Ali Sabah Al-Salem",
+        "name_ar": "علي صباح السالم",
+        "lat": 29.06500,
+        "lng": 48.07500
+    },
+    {
+        "code": "KW-FAA",
+        "state_code": "AH",
+        "name_en": "Fahd al-Ahmad",
+        "name_ar": "فهد الأحمد",
+        "lat": 29.06000,
+        "lng": 48.08000
+    },
+    {
+        "code": "KW-SAB8",
+        "state_code": "AH",
+        "name_en": "Sabah Al-Ahmad City",
+        "name_ar": "مدينه صباح الأحمد",
+        "lat": 29.05500,
+        "lng": 48.08500
+    },
+    {
+        "code": "KW-HAD",
+        "state_code": "AH",
+        "name_en": "Hadiya",
+        "name_ar": "هدية",
+        "lat": 29.05000,
+        "lng": 48.09000
+    },
+    {
+        "code": "KW-ABU",
+        "state_code": "MU",
+        "name_en": "Abu Al Hasaniya",
+        "name_ar": "أبو الحصانية",
+        "lat": 29.18000,
+        "lng": 48.11500
+    },
+    {
+        "code": "KW-ABF",
+        "state_code": "MU",
+        "name_en": "Abu Ftaira",
+        "name_ar": "أبو فطيرة",
+        "lat": 29.19306,
+        "lng": 48.10722
+    },
+    {
+        "code": "KW-QUR",
+        "state_code": "MU",
+        "name_en": "Al Qurain",
+        "name_ar": "القرين",
+        "lat": 29.23750,
+        "lng": 48.05250
+    },
+    {
+        "code": "KW-ADN",
+        "state_code": "MU",
+        "name_en": "Al-Adan",
+        "name_ar": "العدان",
+        "lat": 29.23750,
+        "lng": 48.05833
+    },
+    {
+        "code": "KW-FNA",
+        "state_code": "MU",
+        "name_en": "Al-Fnaitees",
+        "name_ar": "الفنيطيس",
+        "lat": 29.22528,
+        "lng": 48.10167
+    },
+    {
+        "code": "KW-MAS",
+        "state_code": "MU",
+        "name_en": "Al-Masayel",
+        "name_ar": "المسايل",
+        "lat": 29.23930,
+        "lng": 48.08862
+    },
+    {
+        "code": "KW-QUS",
+        "state_code": "MU",
+        "name_en": "Al-Qusour",
+        "name_ar": "القصور",
+        "lat": 29.21748,
+        "lng": 48.07260
+    },
+    {
+        "code": "KW-MES",
+        "state_code": "MU",
+        "name_en": "Messila",
+        "name_ar": "المسيلة",
+        "lat": 29.28056,
+        "lng": 48.08306
+    },
+    {
+        "code": "KW-MUB",
+        "state_code": "MU",
+        "name_en": "Mubarak Al-Kabeer",
+        "name_ar": "مبارك الكبير",
+        "lat": 29.18979,
+        "lng": 48.08716
+    },
+    {
+        "code": "KW-SAB",
+        "state_code": "MU",
+        "name_en": "Sabah Al-Salem",
+        "name_ar": "صباح السالم",
+        "lat": 29.25722,
+        "lng": 48.05722
+    },
+    {
+        "code": "KW-SAB",
+        "state_code": "MU",
+        "name_en": "Subhan Industrial",
+        "name_ar": "صبحان",
+        "lat": 29.22694,
+        "lng": 48.06222
+    },
+    {
+        "code": "KW-WES",
+        "state_code": "MU",
+        "name_en": "West Abu Ftaira Herafiya",
+        "name_ar": "غرب ابو فطيرة حرفية",
+        "lat": 29.19500,
+        "lng": 48.10000
+    },
+    {
+        "code": "KW-WIS",
+        "state_code": "MU",
+        "name_en": "Wista",
+        "name_ar": "وسطي",
+        "lat": 29.25000,
+        "lng": 48.08333
+    },
+    {
+        "code": "KW-WAFI",
+        "state_code": "MU",
+        "name_en": "West Abu Ftaira Industrial Area",
+        "name_ar": "غرب أبو فطيرة الحرفية",
+        "lat": 29.19500,
+        "lng": 48.10000
+    }
+]

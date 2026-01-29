@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="دليل العقار - ابحث عن شقق للإيجار وبيوت للبيع في الكويت">
+  <title>دليل العقار - شقق للإيجار | بيوت للبيع في الكويت</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/home.css">
+</head>
+<body class="page-home">
+  <!-- ========== NAVBAR ========== -->
+  <nav class="c-navbar">
+    <div class="l-container c-navbar__inner">
+      <!-- Brand -->
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="c-navbar__links">
+        <a href="index.html" class="c-navbar__link c-navbar__link--active">الرئيسية</a>
+        <a href="listings.html" class="c-navbar__link">عقارات الكويت</a>
+        <a href="#" class="c-navbar__link">المكاتب</a>
+        <a href="login.html" class="c-navbar__link">دخول</a>
+        <a href="#" class="c-navbar__link">تسجيل</a>
+      </div>
+
+      <!-- CTA Area -->
+      <div class="c-navbar__cta">
+        <a href="#" class="c-navbar__lang">EN</a>
+        <a href="new-listing.html" class="c-btn c-btn--ghost c-btn--sm">
+          <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+         أضافه اعلان جديد
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="c-navbar__hamburger" id="openDrawer" aria-label="القائمة">
+        <svg class="c-navbar__hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE DRAWER ========== -->
+  <div class="c-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="c-drawer" id="drawer">
+    <div class="c-drawer__header">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+      <button class="c-drawer__close" id="closeDrawer" aria-label="إغلاق">
+        <svg class="c-drawer__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="c-drawer__nav">
+      <a href="index.html" class="c-drawer__link c-drawer__link--active">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        الرئيسية (بحث)
+      </a>
+      <a href="login.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+          <polyline points="10 17 15 12 10 7"/>
+          <line x1="15" y1="12" x2="3" y2="12"/>
+        </svg>
+        دخول
+      </a>
+      <a href="#" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="8.5" cy="7" r="4"/>
+          <line x1="20" y1="8" x2="20" y2="14"/>
+          <line x1="23" y1="11" x2="17" y2="11"/>
+        </svg>
+        تسجيل
+      </a>
+      <a href="#" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+        </svg>
+        المكاتب
+      </a>
+      <a href="listings.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        عقارات الكويت
+      </a>
+    </nav>
+    
+    <div class="c-drawer__cta">
+      <a href="new-listing.html" class="c-btn c-btn--primary c-btn--block">
+        <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+       أضافه اعلان جديد
+      </a>
+    </div>
+    
+    <div class="c-drawer__footer">
+      <a href="#" class="c-drawer__social" aria-label="Twitter">
+        <svg class="c-drawer__social-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+        </svg>
+      </a>
+      <a href="#" class="c-drawer__social" aria-label="Instagram">
+        <svg class="c-drawer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+      <a href="#" class="c-navbar__lang u-mr-auto">EN</a>
+    </div>
+  </aside>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="p-hero">
+    <img src="../assets/img/background.png" alt="" class="p-hero__bg-img">
+    <div class="l-container">
+      <div class="p-hero__content">
+        <h1 class="p-hero__title">شقق للإيجار | بيوت للبيع في الكويت</h1>
+        <p class="p-hero__subtitle">ابحث في آلاف العقارات المتاحة في جميع مناطق الكويت</p>
+        
+        <!-- Search Box -->
+        <div class="p-hero__search">
+          <div class="p-hero__search-row">
+            <div class="c-search">
+              <svg class="c-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" class="c-search__input" placeholder="اكتب المنطقة للبحث...">
+            </div>
+            <select class="p-hero__select">
+              <option value="">نوع العقار</option>
+              <option value="apartment">شقة</option>
+              <option value="house">بيت</option>
+              <option value="land">أرض</option>
+              <option value="building">عمارة</option>
+              <option value="chalet">شاليه</option>
+            </select>
+          </div>
+          
+          <!-- Tabs -->
+          <div class="p-hero__tabs">
+            <button class="p-hero__tab p-hero__tab--active" data-tab="rent">للإيجار</button>
+            <button class="p-hero__tab" data-tab="sale">للبيع</button>
+            <button class="p-hero__tab" data-tab="exchange">للبدل</button>
+          </div>
+          
+          <a href="listings.html" class="c-btn c-btn--primary c-btn--lg p-hero__search-btn">
+            <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            بحث
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LATEST LISTINGS SECTION ========== -->
+  <section class="l-section">
+    <div class="l-container">
+      <div class="l-section__header">
+        <h2 class="l-section__title">أحدث إعلانات العقارات في الكويت</h2>
+        <a href="listings.html" class="l-section__link">
+          عرض الكل
+          <svg class="l-section__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="l-listings-grid" id="latestListings">
+        <!-- Cards will be populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="l-footer-grid">
+        <div class="c-footer__main">
+          <div class="c-footer__brand">
+            <img src="../assets/img/logo.png" alt="دليل العقار" class="c-footer__logo-img">
+          </div>
+          <p class="c-footer__desc">
+            منصتك الأولى للبحث عن العقارات في الكويت. نوفر لك آلاف الإعلانات من شقق وبيوت وأراضي للبيع والإيجار.
+          </p>
+          <img src="../assets/img/chracter.png" alt="" class="c-footer__character">
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">روابط سريعة</h4>
+          <div class="c-footer__links">
+            <a href="index.html" class="c-footer__link">الرئيسية</a>
+            <a href="listings.html" class="c-footer__link">عقارات الكويت</a>
+            <a href="#" class="c-footer__link">المكاتب العقارية</a>
+            <a href="new-listing.html" class="c-footer__link">إضافة إعلان</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">أنواع العقارات</h4>
+          <div class="c-footer__links">
+            <a href="#" class="c-footer__link">شقق للإيجار</a>
+            <a href="#" class="c-footer__link">بيوت للبيع</a>
+            <a href="#" class="c-footer__link">أراضي</a>
+            <a href="#" class="c-footer__link">شاليهات</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">تواصل معنا</h4>
+          <div class="c-footer__links">
+            <a href="#" class="c-footer__link">من نحن</a>
+            <a href="#" class="c-footer__link">اتصل بنا</a>
+            <a href="#" class="c-footer__link">سياسة الخصوصية</a>
+            <a href="#" class="c-footer__link">الشروط والأحكام</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="c-footer__bottom">
+        <p class="c-footer__copy">© 2025 دليل العقار. جميع الحقوق محفوظة.</p>
+        <div class="c-footer__social">
+          <a href="#" class="c-footer__social-link" aria-label="Twitter">
+            <svg class="c-footer__social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="c-footer__social-link" aria-label="Instagram">
+            <svg class="c-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="c-footer__social-link" aria-label="Facebook">
+            <svg class="c-footer__social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/components/drawer.js"></script>
+  <script src="../assets/js/components/filters.js"></script>
+  <script src="../assets/js/components/cards.js"></script>
+  <script src="../assets/js/pages/home.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
+

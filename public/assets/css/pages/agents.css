@@ -1,0 +1,119 @@
+/**
+ * ============================================================
+ * DALEL - Agents Page Styles
+ * ============================================================
+ */
+
+.p-agents {
+  padding-bottom: var(--space-48);
+}
+
+/* Agents Grid */
+.p-agents__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-24);
+}
+
+/* Agent Card */
+.p-agents__card {
+  background: var(--c-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border-light);
+  transition: all var(--transition-base);
+}
+
+.p-agents__card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.p-agents__avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-16);
+  border-radius: var(--radius-full);
+  background: var(--c-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-agents__avatar-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--c-primary);
+}
+
+.p-agents__name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-text);
+  margin-bottom: var(--space-4);
+}
+
+.p-agents__company {
+  font-size: var(--font-size-sm);
+  color: var(--c-muted);
+  margin-bottom: var(--space-12);
+}
+
+.p-agents__stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-24);
+  padding: var(--space-12) 0;
+  margin-bottom: var(--space-16);
+  border-top: 1px solid var(--c-border-light);
+  border-bottom: 1px solid var(--c-border-light);
+}
+
+.p-agents__stat {
+  text-align: center;
+}
+
+.p-agents__stat-value {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary);
+}
+
+.p-agents__stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--c-muted);
+}
+
+.p-agents__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-6);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--c-primary);
+}
+
+.p-agents__card-link:hover {
+  text-decoration: underline;
+}
+
+.p-agents__card-link-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .p-agents__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .p-agents__grid {
+    grid-template-columns: 1fr;
+  }
+}
+

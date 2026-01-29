@@ -1,0 +1,169 @@
+/**
+ * ============================================================
+ * DALEL - Agent Profile Page Styles
+ * ============================================================
+ */
+
+.p-agent {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-48);
+}
+
+/* Profile Header */
+.p-agent__header {
+  background: linear-gradient(135deg, var(--c-primary-dark) 0%, #2a5a8a 100%);
+  padding: var(--space-32);
+  margin-bottom: var(--space-32);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--space-24);
+}
+
+.p-agent__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-full);
+  background: var(--c-bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.p-agent__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-agent__avatar-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--c-primary);
+}
+
+.p-agent__info {
+  flex: 1;
+  color: var(--c-bg-white);
+}
+
+.p-agent__name {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.p-agent__verified {
+  color: #22c55e;
+}
+
+.p-agent__verified svg {
+  width: 24px;
+  height: 24px;
+}
+
+.p-agent__office {
+  font-size: var(--font-size-base);
+  opacity: 0.9;
+  margin-bottom: var(--space-8);
+}
+
+.p-agent__stats {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+  margin-bottom: var(--space-16);
+}
+
+.p-agent__actions {
+  display: flex;
+  gap: var(--space-12);
+  flex-wrap: wrap;
+}
+
+.p-agent__actions .c-btn {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-sm);
+}
+
+.p-agent__actions .c-btn--outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.p-agent__actions .c-btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.p-agent__actions .c-btn--primary {
+  background: #25d366;
+  border: none;
+}
+
+.p-agent__actions .c-btn--primary:hover {
+  background: #1fb855;
+}
+
+/* Bio */
+.p-agent__bio {
+  background: var(--c-bg-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-32);
+  border: 1px solid var(--c-border-light);
+  color: var(--c-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Listings Section */
+.p-agent__listings {
+  margin-top: var(--space-32);
+}
+
+.p-agent__listings .l-section__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-24);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .p-agent__header {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-24);
+  }
+
+  .p-agent__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .p-agent__avatar-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .p-agent__name {
+    font-size: var(--font-size-xl);
+    justify-content: center;
+  }
+
+  .p-agent__actions {
+    justify-content: center;
+  }
+
+  .p-agent__actions .c-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}

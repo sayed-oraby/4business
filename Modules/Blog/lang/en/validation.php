@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'title.required' => 'The title field is required.',
+    'title.array' => 'The title must be an array.',
+    'title.en.required_without' => 'The title.en field is required when title.ar is not present.',
+    'title.ar.required_without' => 'The title.ar field is required when title.en is not present.',
+    'title.en.string' => 'The title (English) must be a string.',
+    'title.ar.string' => 'The title (Arabic) must be a string.',
+    'title.en.max' => 'The title (English) must not exceed 255 characters.',
+    'title.ar.max' => 'The title (Arabic) must not exceed 255 characters.',
+    'short_description.array' => 'The short description must be an array.',
+    'short_description.en.string' => 'The short description (English) must be a string.',
+    'short_description.ar.string' => 'The short description (Arabic) must be a string.',
+    'short_description.en.max' => 'The short description (English) must not exceed 500 characters.',
+    'short_description.ar.max' => 'The short description (Arabic) must not exceed 500 characters.',
+    'description.array' => 'The description must be an array.',
+    'description.en.string' => 'The description (English) must be a string.',
+    'description.ar.string' => 'The description (Arabic) must be a string.',
+    'status.required' => 'The status field is required.',
+    'status.in' => 'The selected status is invalid.',
+    'image.image' => 'The file must be an image.',
+    'image.max' => 'The image size must not exceed 5MB.',
+    'tags.array' => 'The tags must be an array.',
+    'tags.*.integer' => 'The tags must be integers.',
+    'tags.*.exists' => 'The selected tag does not exist.',
+    'gallery_token.required' => 'The gallery token field is required.',
+    'gallery_token.string' => 'The gallery token must be a string.',
+    'gallery_token.max' => 'The gallery token must not exceed 64 characters.',
+    'created_by.integer' => 'The author must be an integer.',
+    'created_by.exists' => 'The selected author does not exist.',
+];
+

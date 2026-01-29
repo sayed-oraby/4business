@@ -1,0 +1,215 @@
+.p-static .l-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.p-static .p-static__header {
+    padding-bottom: 50px;
+}
+
+.p-static__content .p-static__card {
+    background: #FFF;
+    padding: 25px;
+    border-radius: 20px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.c-input,
+.c-select,
+.c-textarea {
+    margin-bottom: 30px;
+}
+
+@media(max-width:768px) {
+
+    .p-static__content .p-static__card {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+}
+
+
+
+.p-account {
+    padding: var(--space-32) 0;
+}
+
+.p-account__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-20);
+    margin-bottom: var(--space-32);
+    flex-wrap: wrap;
+}
+
+.p-account__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-full);
+    background: var(--c-primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.p-account__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-account__avatar svg {
+    width: 40px;
+    height: 40px;
+    color: var(--c-primary);
+}
+
+.p-account__info {
+    flex: 1;
+}
+
+.p-account__name {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--c-text);
+    margin-bottom: var(--space-4);
+}
+
+.p-account__phone {
+    color: var(--c-muted);
+    direction: ltr;
+    display: inline-block;
+}
+
+.p-account__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-16);
+    margin-bottom: var(--space-32);
+}
+
+.p-account__stat {
+    background: var(--c-bg-white);
+    padding: var(--space-20);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+}
+
+.p-account__stat-value {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--c-primary);
+}
+
+.p-account__stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--c-muted);
+    margin-top: var(--space-4);
+}
+
+/* Menu Section */
+.p-account__menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-16);
+    margin-bottom: var(--space-32);
+}
+
+.p-account__menu-item {
+    background: var(--c-bg-white);
+    padding: var(--space-20);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+    text-decoration: none;
+    color: var(--c-text);
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.p-account__menu-item:hover {
+    border-color: var(--c-primary);
+    transform: translateY(-2px);
+}
+
+.p-account__menu-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--c-primary-light);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.p-account__menu-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--c-primary);
+}
+
+.p-account__menu-icon--danger {
+    background: #fee2e2;
+}
+
+.p-account__menu-icon--danger svg {
+    color: #dc2626;
+}
+
+.p-account__menu-icon--success {
+    background: #d1fae5;
+}
+
+.p-account__menu-icon--success svg {
+    color: #059669;
+}
+
+.p-account__menu-content {
+    flex: 1;
+}
+
+.p-account__menu-title {
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-4);
+}
+
+.p-account__menu-desc {
+    font-size: var(--font-size-sm);
+    color: var(--c-muted);
+}
+
+.p-account__section {
+    margin-bottom: var(--space-32);
+}
+
+.p-account__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-20);
+    flex-wrap: wrap;
+    gap: var(--space-12);
+}
+
+.p-account__section-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 768px) {
+    .p-account__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .p-account__menu {
+        grid-template-columns: 1fr;
+    }
+}

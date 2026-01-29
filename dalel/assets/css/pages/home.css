@@ -1,0 +1,183 @@
+/**
+ * ============================================================
+ * DALEL - Home Page Styles
+ * Hero section, search box, tabs
+ * ============================================================
+ */
+
+/* ==========================================================
+   HERO SECTION
+   ========================================================== */
+
+.p-hero {
+  background: linear-gradient(180deg, var(--c-bg-white) 0%, var(--c-bg) 100%);
+  padding: var(--space-48) 0 var(--space-64);
+  position: relative;
+  overflow: hidden;
+}
+
+.p-hero__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  opacity: 0.15;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200'%3E%3Cpath fill='%235ba3d0' d='M0 200V100c50-20 100-30 200-30s150 40 250 40 150-30 250-30 100 20 200 20 150-20 200-30 100 10 100 30v100z'/%3E%3C/svg%3E") center bottom no-repeat;
+  background-size: cover;
+}
+
+.p-hero__bg-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.p-hero__content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.p-hero__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-12);
+  line-height: var(--line-height-tight);
+}
+
+.p-hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--c-text-secondary);
+  margin-bottom: var(--space-32);
+}
+
+/* Search Box */
+.p-hero__search {
+  background: var(--c-bg-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-24);
+  box-shadow: var(--shadow-lg);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.p-hero__search-row {
+  display: flex;
+  gap: var(--space-12);
+  margin-bottom: var(--space-16);
+}
+
+.p-hero__select {
+  min-width: 160px;
+  padding: var(--space-12) var(--space-16);
+  padding-left: var(--space-40);
+  background: var(--c-bg);
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  color: var(--c-text);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238b95a5' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 12px center;
+  transition: border-color var(--transition-base);
+}
+
+.p-hero__select:focus {
+  border-color: var(--c-primary);
+  outline: none;
+}
+
+/* Segmented Tabs */
+.p-hero__tabs {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+  justify-content: center;
+}
+
+.p-hero__tab {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--c-text-secondary);
+  background: var(--c-bg);
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-base);
+  border: none;
+  cursor: pointer;
+}
+
+.p-hero__tab:hover:not(.p-hero__tab--active) {
+  background: var(--c-border-light);
+}
+
+.p-hero__tab--active {
+  background: var(--c-primary-dark);
+  color: var(--c-bg-white);
+}
+
+.p-hero__search-btn {
+  width: 100%;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1024px) {
+  .p-hero__title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .p-hero__search-row {
+    flex-direction: column;
+  }
+  
+  .p-hero__select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .p-hero {
+    padding: var(--space-32) 0 var(--space-40);
+  }
+  
+  .p-hero__title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .p-hero__subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-24);
+  }
+  
+  .p-hero__search {
+    padding: var(--space-16);
+    border-radius: var(--radius-lg);
+  }
+  
+  .p-hero__tabs {
+    flex-wrap: wrap;
+  }
+  
+  .p-hero__tab {
+    flex: 1;
+    min-width: calc(33% - 8px);
+    text-align: center;
+    padding: var(--space-10) var(--space-12);
+    font-size: var(--font-size-sm);
+  }
+}
+

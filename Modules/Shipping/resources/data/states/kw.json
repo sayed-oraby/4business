@@ -1,0 +1,32 @@
+[
+    {
+        "code": "AH",
+        "name_en": "Al Ahmadi",
+        "name_ar": "الأحمدي"
+    },
+    {
+        "code": "FA",
+        "name_en": "Al Farwaniyah",
+        "name_ar": "الفروانية"
+    },
+    {
+        "code": "HA",
+        "name_en": "Hawally",
+        "name_ar": "حولي"
+    },
+    {
+        "code": "JA",
+        "name_en": "Al Jahra",
+        "name_ar": "الجهراء"
+    },
+    {
+        "code": "KU",
+        "name_en": "Kuwait City",
+        "name_ar": "مدينة الكويت"
+    },
+    {
+        "code": "MU",
+        "name_en": "Mubarak Al-Kabeer",
+        "name_ar": "مبارك الكبير"
+    }
+]

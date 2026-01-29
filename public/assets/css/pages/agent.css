@@ -1,0 +1,145 @@
+/**
+ * ============================================================
+ * DALEL - Agent Profile Page Styles
+ * ============================================================
+ */
+
+.p-agent {
+  padding-bottom: var(--space-48);
+}
+
+/* Profile Header */
+.p-agent__header {
+  background: linear-gradient(135deg, var(--c-primary-dark) 0%, #2a5a8a 100%);
+  padding: var(--space-48) 0;
+  margin-bottom: var(--space-32);
+}
+
+.p-agent__header-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-32);
+}
+
+.p-agent__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  background: var(--c-bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  flex-shrink: 0;
+}
+
+.p-agent__avatar-icon {
+  width: 60px;
+  height: 60px;
+  color: var(--c-primary);
+}
+
+.p-agent__info {
+  color: var(--c-bg-white);
+}
+
+.p-agent__name {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-8);
+}
+
+.p-agent__company {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  margin-bottom: var(--space-16);
+}
+
+.p-agent__stats {
+  display: flex;
+  gap: var(--space-32);
+}
+
+.p-agent__stat {
+  text-align: center;
+}
+
+.p-agent__stat-value {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.p-agent__stat-label {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+/* Contact Box */
+.p-agent__contact {
+  background: var(--c-bg-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-24);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border-light);
+  margin-bottom: var(--space-32);
+}
+
+.p-agent__contact-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-16);
+}
+
+.p-agent__contact-btns {
+  display: flex;
+  gap: var(--space-12);
+}
+
+.p-agent__contact-btn {
+  flex: 1;
+  justify-content: center;
+}
+
+/* Listings Section */
+.p-agent__listings-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-24);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .p-agent__header {
+    padding: var(--space-32) 0;
+  }
+  
+  .p-agent__header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .p-agent__avatar {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .p-agent__avatar-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .p-agent__name {
+    font-size: var(--font-size-xl);
+  }
+  
+  .p-agent__stats {
+    justify-content: center;
+  }
+  
+  .p-agent__contact-btns {
+    flex-direction: column;
+  }
+}
+

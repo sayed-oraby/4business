@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'title' => 'System Settings',
+    'navigation' => [
+        'title' => 'Sections',
+    ],
+    'tabs' => [
+        'general' => 'General',
+        'languages' => 'Languages',
+        'contact' => 'Contact',
+        'mail' => 'Email & SMTP',
+        'branding' => 'Branding',
+        'social' => 'Social',
+        'custom_code' => 'Custom Code',
+    ],
+    'general' => [
+        'heading' => 'Application Identity',
+        'app_name' => 'Application name',
+        'app_description' => 'Description',
+    ],
+    'languages' => [
+        'heading' => 'Localization',
+        'supported' => 'Supported languages',
+        'default_locale' => 'Default locale',
+        'fallback_locale' => 'Fallback locale',
+        'hint' => 'Disable Arabic to hide the language switcher across the dashboard.',
+    ],
+    'contact' => [
+        'heading' => 'Contact & Addresses',
+        'address_heading' => 'Addresses',
+        'inbox_email' => 'Primary inbox email',
+        'whatsapp' => 'WhatsApp number',
+        'phone' => 'Phone number',
+        'support_line' => 'Support hotline',
+    ],
+    'mail' => [
+        'heading' => 'Mail Driver',
+        'driver' => 'Mail driver',
+        'encryption' => 'Encryption',
+        'host' => 'Host',
+        'port' => 'Port',
+        'username' => 'Username',
+        'password' => 'Password',
+        'password_placeholder' => 'Leave blank to keep existing password',
+        'password_help' => 'Password is stored encrypted. Provide a new value only when you need to rotate credentials.',
+        'from_name' => 'From name',
+        'from_address' => 'From email',
+    ],
+    'branding' => [
+        'heading' => 'Logos & Branding',
+        'logo' => 'Primary logo',
+        'logo_white' => 'White logo',
+        'favicon' => 'Favicon',
+        'footer' => 'Footer copy',
+        'remove' => 'Remove asset',
+    ],
+    'social' => [
+        'heading' => 'Social Links',
+        'facebook' => 'Facebook',
+        'twitter' => 'Twitter / X',
+        'instagram' => 'Instagram',
+        'youtube' => 'YouTube',
+        'snapchat' => 'Snapchat',
+        'tiktok' => 'TikTok',
+    ],
+    'custom_code' => [
+        'heading' => 'Custom Code Injection',
+        'head_css' => 'CSS inside <head>',
+        'head_js' => 'JavaScript before </head>',
+        'body_js' => 'JavaScript before </body>',
+    ],
+    'actions' => [
+        'save' => 'Save changes',
+    ],
+    'messages' => [
+        'saved' => 'Settings updated successfully.',
+        'validation_failed' => 'Please fix the highlighted errors:',
+        'public_payload_loaded' => 'Public settings loaded successfully.',
+    ],
+];

@@ -1,0 +1,61 @@
+<?php
+
+return [
+    'invalid_credentials' => 'invalid credentials',
+    'phone_not_found' => 'Phone number not registered',
+    'password_confirmation_mismatch' => 'Password and password confirmation do not match',
+    'invalid_otp' => 'The verification code is invalid or expired.',
+    'registered' => 'Registered successfully.',
+    'verified' => 'Account verified successfully.',
+    'fields' => [
+        'email' => 'email address',
+        'password' => 'password',
+        'otp' => 'verification code',
+    ],
+    'login' => [
+        'title' => 'Sign In to :app',
+        'subtitle' => 'Admin Access Portal',
+        'remember' => 'Remember Me',
+        'forgot' => 'Forgot Password?',
+        'button' => 'Sign In',
+    ],
+    'password' => [
+        'forgot_title' => 'Forgot Password',
+        'forgot_subtitle' => 'Enter your admin email to receive a one-time password.',
+        'send_otp' => 'Send Verification Code',
+        'otp_title' => 'Verify One-Time Password',
+        'otp_subtitle' => 'Enter the 6-digit code we sent to :email.',
+        'verify_button' => 'Verify OTP',
+        'reset_title' => 'Set a New Password',
+        'reset_subtitle' => 'Create a secure password to regain access.',
+        'update_button' => 'Update Password',
+        'otp_sent' => 'We sent a verification code to :email.',
+        'otp_sent_mobile' => 'Verification code sent to your mobile number.',
+        'otp_resent' => 'Verification code has been resent.',
+        'otp_verified' => 'OTP verified. Please choose a new password.',
+        'invalid_otp' => 'The verification code is invalid or expired.',
+        'reset_success' => 'Password updated successfully. Please sign in.',
+    ],
+    'emails' => [
+        'otp' => [
+            'subject' => 'Your Password Reset Code',
+            'title' => 'Enter this code to reset your password',
+            'intro' => 'Enter the code below on the password reset page to verify your identity.',
+            'expires' => 'This code will expire in :minutes minutes.',
+            'security' => 'To help security, don\'t share this code with anyone.',
+            'outro' => 'If you didn\'t send this request, you can ignore this email.',
+            'team' => 'The :app Team',
+            'rights' => 'All rights reserved.',
+        ],
+        'success' => [
+            'subject' => 'Your :app password was changed',
+            'intro' => 'This is a confirmation that your password was updated.',
+            'outro' => 'If you did not perform this action, contact support immediately.',
+        ],
+    ],
+    'api' => [
+        'registered' => 'New user registered successfully.',
+        'logged_in' => 'Logged in successfully.',
+        'logout' => 'Logged out successfully.',
+    ],
+];

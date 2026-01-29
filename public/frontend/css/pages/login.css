@@ -1,0 +1,258 @@
+/**
+ * ============================================================
+ * DALEL - Login Page Styles
+ * ============================================================
+ */
+
+.p-login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-login__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-32) var(--space-16);
+  background: linear-gradient(135deg, var(--c-bg) 0%, #e8f4fa 100%);
+}
+
+.p-login__card {
+  background: var(--c-bg-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-40);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 420px;
+}
+
+.p-login__header {
+  text-align: center;
+  margin-bottom: var(--space-32);
+}
+
+.p-login__icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto var(--space-20);
+  background: var(--c-primary-light);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-login__icon svg {
+  width: 36px;
+  height: 36px;
+  color: var(--c-primary);
+}
+
+.p-login__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-8);
+}
+
+.p-login__subtitle {
+  font-size: var(--font-size-base);
+  color: var(--c-muted);
+}
+
+/* Form */
+.p-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+}
+
+/* Phone Input */
+.p-login__phone-group {
+  display: flex;
+  gap: var(--space-10);
+}
+
+.p-login__country {
+  flex-shrink: 0;
+  width: 100px;
+  height: 52px;
+  padding: 0 var(--space-12);
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--radius-md);
+  background: var(--c-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--c-text);
+  direction: ltr;
+}
+
+.p-login__flag {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.p-login__flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-login__phone-input {
+  flex: 1;
+  direction: ltr;
+  text-align: right;
+}
+
+/* Options row */
+.p-login__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-login__remember {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.p-login__remember-input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--c-primary);
+}
+
+.p-login__remember-label {
+  font-size: var(--font-size-sm);
+  color: var(--c-text-secondary);
+}
+
+.p-login__forgot {
+  font-size: var(--font-size-sm);
+  color: var(--c-primary);
+}
+
+.p-login__forgot:hover {
+  text-decoration: underline;
+}
+
+/* Submit */
+.p-login__submit {
+  margin-top: var(--space-12);
+}
+
+.p-login__submit .c-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Divider */
+.p-login__divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  margin: var(--space-24) 0;
+}
+
+.p-login__divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--c-border);
+}
+
+.p-login__divider-text {
+  font-size: var(--font-size-sm);
+  color: var(--c-muted);
+}
+
+/* Social Login */
+.p-login__social {
+  display: flex;
+  gap: var(--space-12);
+}
+
+.p-login__social-btn {
+  flex: 1;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--radius-md);
+  background: var(--c-bg-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--c-text);
+  transition: all var(--transition-base);
+}
+
+.p-login__social-btn:hover {
+  background: var(--c-bg);
+  border-color: var(--c-primary);
+}
+
+.p-login__social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Register link */
+.p-login__register {
+  text-align: center;
+  margin-top: var(--space-24);
+  padding-top: var(--space-24);
+  border-top: 1px solid var(--c-border-light);
+  font-size: var(--font-size-sm);
+  color: var(--c-muted);
+}
+
+.p-login__register-link {
+  color: var(--c-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.p-login__register-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .p-login__card {
+    padding: var(--space-24);
+    border-radius: var(--radius-lg);
+  }
+
+  .p-login__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .p-login__icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .p-login__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .p-login__options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-12);
+  }
+}
+
+#ajax-error-container p {
+  color: red;
+}

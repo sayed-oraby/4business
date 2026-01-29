@@ -1,0 +1,276 @@
+/**
+ * ============================================================
+ * DALEL - OTP Verification Page Styles
+ * ============================================================
+ */
+
+.p-otp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-otp__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-32) var(--space-16);
+  background: linear-gradient(135deg, var(--c-bg) 0%, #e8f4fa 100%);
+}
+
+.p-otp__container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.p-otp__card {
+  background: var(--c-bg-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-40);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.p-otp__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-24);
+  background: var(--c-primary-light);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-otp__icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--c-primary);
+}
+
+.p-otp__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary-dark);
+  margin-bottom: var(--space-12);
+}
+
+.p-otp__subtitle {
+  font-size: var(--font-size-base);
+  color: var(--c-muted);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-8);
+}
+
+.p-otp__phone {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--c-text);
+  direction: ltr;
+  display: inline-block;
+  margin-bottom: var(--space-32);
+}
+
+/* OTP Input Boxes */
+.p-otp__boxes {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+  direction: ltr;
+  margin-bottom: var(--space-32);
+}
+
+.p-otp__box {
+  width: 64px;
+  height: 72px;
+  border: 2px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  background: var(--c-bg-white);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  color: var(--c-text);
+  transition: all var(--transition-base);
+  caret-color: var(--c-primary);
+}
+
+.p-otp__box:focus {
+  outline: none;
+  border-color: var(--c-primary);
+  box-shadow: var(--shadow-focus);
+}
+
+.p-otp__box--filled {
+  border-color: var(--c-primary);
+  background: var(--c-primary-light);
+}
+
+.p-otp__box--error {
+  border-color: var(--c-danger);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+/* Timer */
+.p-otp__timer {
+  margin-bottom: var(--space-24);
+}
+
+.p-otp__countdown {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.p-otp__timer-label {
+  font-size: var(--font-size-sm);
+  color: var(--c-muted);
+  margin-top: var(--space-4);
+}
+
+/* Resend */
+.p-otp__resend {
+  margin-bottom: var(--space-32);
+}
+
+.p-otp__resend-text {
+  font-size: var(--font-size-sm);
+  color: var(--c-muted);
+}
+
+.p-otp__resend-link {
+  color: var(--c-primary);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: color var(--transition-base);
+}
+
+.p-otp__resend-link:hover {
+  color: var(--c-primary-dark);
+  text-decoration: underline;
+}
+
+.p-otp__resend-link--disabled {
+  color: var(--c-muted);
+  pointer-events: none;
+}
+
+/* Submit */
+.p-otp__submit {
+  margin-bottom: var(--space-24);
+}
+
+.p-otp__submit .c-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Back link */
+.p-otp__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  font-size: var(--font-size-sm);
+  color: var(--c-muted);
+  transition: color var(--transition-base);
+}
+
+.p-otp__back:hover {
+  color: var(--c-primary);
+}
+
+.p-otp__back-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Error message */
+.p-otp__error {
+  display: none;
+  padding: var(--space-12) var(--space-16);
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-24);
+  font-size: var(--font-size-sm);
+  color: var(--c-danger);
+}
+
+.p-otp__error--visible {
+  display: block;
+}
+
+/* Success state */
+.p-otp__success {
+  display: none;
+}
+
+.p-otp__success--visible {
+  display: block;
+}
+
+.p-otp__success-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto var(--space-24);
+  background: var(--c-success-light);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-otp__success-icon svg {
+  width: 50px;
+  height: 50px;
+  color: #22c55e;
+}
+
+.p-otp__success-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-text);
+  margin-bottom: var(--space-8);
+}
+
+.p-otp__success-text {
+  font-size: var(--font-size-base);
+  color: var(--c-muted);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .p-otp__card {
+    padding: var(--space-24);
+    border-radius: var(--radius-lg);
+  }
+
+  .p-otp__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .p-otp__icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .p-otp__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .p-otp__boxes {
+    gap: var(--space-10);
+  }
+
+  .p-otp__box {
+    width: 54px;
+    height: 62px;
+    font-size: var(--font-size-2xl);
+  }
+}
+
+
+#ajax-error-container p {
+  color: red;
+}

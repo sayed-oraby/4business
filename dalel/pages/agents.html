@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="المكاتب العقارية - دليل العقار">
+  <title>المكاتب العقارية - دليل العقار</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/agents.css">
+</head>
+<body class="page-agents">
+  <!-- ========== NAVBAR ========== -->
+  <nav class="c-navbar">
+    <div class="l-container c-navbar__inner">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+
+      <div class="c-navbar__links">
+        <a href="index.html" class="c-navbar__link">الرئيسية</a>
+        <a href="listings.html" class="c-navbar__link">عقارات الكويت</a>
+        <a href="agents.html" class="c-navbar__link c-navbar__link--active">المكاتب</a>
+        <a href="login.html" class="c-navbar__link">دخول</a>
+        <a href="register.html" class="c-navbar__link">تسجيل</a>
+      </div>
+
+      <div class="c-navbar__cta">
+        <a href="#" class="c-navbar__lang">EN</a>
+        <a href="new-listing.html" class="c-btn c-btn--ghost c-btn--sm">
+          <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+         أضافه اعلان جديد
+        </a>
+      </div>
+
+      <button class="c-navbar__hamburger" id="openDrawer" aria-label="القائمة">
+        <svg class="c-navbar__hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE DRAWER ========== -->
+  <div class="c-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="c-drawer" id="drawer">
+    <div class="c-drawer__header">
+      <a href="index.html" class="c-navbar__brand">
+        <img src="../assets/img/logo.png" alt="دليل العقار" class="c-navbar__logo-img">
+      </a>
+      <button class="c-drawer__close" id="closeDrawer" aria-label="إغلاق">
+        <svg class="c-drawer__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="c-drawer__nav">
+      <a href="index.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        الرئيسية
+      </a>
+      <a href="listings.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        </svg>
+        عقارات الكويت
+      </a>
+      <a href="agents.html" class="c-drawer__link c-drawer__link--active">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+        </svg>
+        المكاتب
+      </a>
+      <a href="login.html" class="c-drawer__link">
+        <svg class="c-drawer__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+          <polyline points="10 17 15 12 10 7"/>
+          <line x1="15" y1="12" x2="3" y2="12"/>
+        </svg>
+        دخول
+      </a>
+    </nav>
+    
+    <div class="c-drawer__cta">
+      <a href="new-listing.html" class="c-btn c-btn--primary c-btn--block">
+        <svg class="c-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+       أضافه اعلان جديد
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="p-agents">
+    <div class="l-container">
+      <!-- Breadcrumb -->
+      <nav class="c-breadcrumb">
+        <a href="index.html" class="c-breadcrumb__link">الرئيسية</a>
+        <span class="c-breadcrumb__separator">›</span>
+        <span class="c-breadcrumb__current">المكاتب العقارية</span>
+      </nav>
+
+      <!-- Page Header -->
+      <div class="l-page-header">
+        <h1 class="l-page-header__title">المكاتب العقارية</h1>
+        <p class="l-page-header__count">(24 مكتب)</p>
+      </div>
+
+      <!-- Agents Grid -->
+      <div class="p-agents__grid">
+        <!-- Agent Card 1 -->
+        <div class="p-agents__card">
+          <div class="p-agents__avatar">
+            <svg class="p-agents__avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="p-agents__name">مكتب الأمانة العقاري</div>
+          <div class="p-agents__company">حولي، الكويت</div>
+          <div class="p-agents__stats">
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">156</div>
+              <div class="p-agents__stat-label">إعلان</div>
+            </div>
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">4.8</div>
+              <div class="p-agents__stat-label">التقييم</div>
+            </div>
+          </div>
+          <a href="agent.html" class="p-agents__card-link">
+            عرض الملف الشخصي
+            <svg class="p-agents__card-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Agent Card 2 -->
+        <div class="p-agents__card">
+          <div class="p-agents__avatar">
+            <svg class="p-agents__avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="p-agents__name">شركة الدار للعقارات</div>
+          <div class="p-agents__company">السالمية، الكويت</div>
+          <div class="p-agents__stats">
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">89</div>
+              <div class="p-agents__stat-label">إعلان</div>
+            </div>
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">4.6</div>
+              <div class="p-agents__stat-label">التقييم</div>
+            </div>
+          </div>
+          <a href="agent.html" class="p-agents__card-link">
+            عرض الملف الشخصي
+            <svg class="p-agents__card-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Agent Card 3 -->
+        <div class="p-agents__card">
+          <div class="p-agents__avatar">
+            <svg class="p-agents__avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="p-agents__name">مكتب النور العقاري</div>
+          <div class="p-agents__company">الفروانية، الكويت</div>
+          <div class="p-agents__stats">
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">234</div>
+              <div class="p-agents__stat-label">إعلان</div>
+            </div>
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">4.9</div>
+              <div class="p-agents__stat-label">التقييم</div>
+            </div>
+          </div>
+          <a href="agent.html" class="p-agents__card-link">
+            عرض الملف الشخصي
+            <svg class="p-agents__card-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Agent Card 4 -->
+        <div class="p-agents__card">
+          <div class="p-agents__avatar">
+            <svg class="p-agents__avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="p-agents__name">مجموعة البيت للعقارات</div>
+          <div class="p-agents__company">الجهراء، الكويت</div>
+          <div class="p-agents__stats">
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">67</div>
+              <div class="p-agents__stat-label">إعلان</div>
+            </div>
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">4.5</div>
+              <div class="p-agents__stat-label">التقييم</div>
+            </div>
+          </div>
+          <a href="agent.html" class="p-agents__card-link">
+            عرض الملف الشخصي
+            <svg class="p-agents__card-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Agent Card 5 -->
+        <div class="p-agents__card">
+          <div class="p-agents__avatar">
+            <svg class="p-agents__avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="p-agents__name">مكتب الصفوة العقاري</div>
+          <div class="p-agents__company">العاصمة، الكويت</div>
+          <div class="p-agents__stats">
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">178</div>
+              <div class="p-agents__stat-label">إعلان</div>
+            </div>
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">4.7</div>
+              <div class="p-agents__stat-label">التقييم</div>
+            </div>
+          </div>
+          <a href="agent.html" class="p-agents__card-link">
+            عرض الملف الشخصي
+            <svg class="p-agents__card-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Agent Card 6 -->
+        <div class="p-agents__card">
+          <div class="p-agents__avatar">
+            <svg class="p-agents__avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="p-agents__name">شركة الخليج للعقارات</div>
+          <div class="p-agents__company">الأحمدي، الكويت</div>
+          <div class="p-agents__stats">
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">95</div>
+              <div class="p-agents__stat-label">إعلان</div>
+            </div>
+            <div class="p-agents__stat">
+              <div class="p-agents__stat-value">4.4</div>
+              <div class="p-agents__stat-label">التقييم</div>
+            </div>
+          </div>
+          <a href="agent.html" class="p-agents__card-link">
+            عرض الملف الشخصي
+            <svg class="p-agents__card-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="l-footer-grid">
+        <div>
+          <div class="c-footer__brand">
+            <img src="../assets/img/logo.png" alt="دليل العقار" class="c-footer__logo-img">
+          </div>
+          <p class="c-footer__desc">منصتك الأولى للبحث عن العقارات في الكويت.</p>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">روابط سريعة</h4>
+          <div class="c-footer__links">
+            <a href="index.html" class="c-footer__link">الرئيسية</a>
+            <a href="listings.html" class="c-footer__link">عقارات الكويت</a>
+            <a href="agents.html" class="c-footer__link">المكاتب العقارية</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">أنواع العقارات</h4>
+          <div class="c-footer__links">
+            <a href="#" class="c-footer__link">شقق للإيجار</a>
+            <a href="#" class="c-footer__link">بيوت للبيع</a>
+            <a href="#" class="c-footer__link">أراضي</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">تواصل معنا</h4>
+          <div class="c-footer__links">
+            <a href="about.html" class="c-footer__link">من نحن</a>
+            <a href="contact.html" class="c-footer__link">اتصل بنا</a>
+            <a href="terms.html" class="c-footer__link">الشروط والأحكام</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="c-footer__bottom">
+        <p class="c-footer__copy">© 2024 دليل العقار. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/components/drawer.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
+

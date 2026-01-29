@@ -1,0 +1,87 @@
+<?php
+
+return [
+    'title' => 'Pages',
+    'description' => 'Manage static and marketing pages with bilingual content, media, and publication statuses.',
+    'search_placeholder' => 'Search pages...',
+    'table' => [
+        'image' => 'Preview',
+        'title' => 'Title',
+        'slug' => 'Slug',
+        'status' => 'Status',
+        'updated_at' => 'Last updated',
+        'actions' => 'Actions',
+    ],
+    'form' => [
+        'title_group' => 'Localized content',
+        'title_en' => 'Title (English)',
+        'title_ar' => 'Title (Arabic)',
+        'description_en' => 'Description (English)',
+        'description_ar' => 'Description (Arabic)',
+        'status' => 'Status',
+        'slug' => 'Slug',
+        'slug_hint' => 'Slug is used in the page URL and must stay unique. It is auto-generated from the English title.',
+        'image' => 'Feature image',
+        'image_help' => 'Allowed file types *.png, *.jpg, *.jpeg',
+        'save' => 'Save page',
+        'image_placeholder' => 'Upload a cover image that represents the page hero section.',
+    ],
+    'messages' => [
+        'created' => 'Page created successfully.',
+        'updated' => 'Page updated successfully.',
+        'deleted' => 'Page deleted successfully.',
+        'bulk_deleted' => 'Selected pages deleted successfully.',
+        'listed' => 'Pages loaded successfully.',
+    ],
+    'actions' => [
+        'create' => 'Add page',
+        'view' => 'View',
+        'edit' => 'Edit',
+        'delete' => 'Delete',
+        'bulk_delete' => 'Delete selected',
+        'bulk_delete_confirm' => 'You are about to delete :count pages. This action cannot be undone.',
+        'confirm_delete' => 'Are you sure you want to delete this page?',
+        'confirm' => 'Confirm',
+        'cancel' => 'Cancel',
+    ],
+    'statuses' => [
+        'draft' => 'Draft',
+        'published' => 'Published',
+        'archived' => 'Archived',
+    ],
+    'states' => [
+        'active' => 'Active',
+        'archived' => 'Archived',
+    ],
+    'filters' => [
+        'state' => [
+            'label' => 'Record state',
+            'active' => 'Active only',
+            'archived' => 'Archived only',
+            'all' => 'Active + archived',
+        ],
+    ],
+    'view' => [
+        'title' => 'Page details',
+        'fields' => [
+            'title' => 'Title',
+            'description' => 'Description',
+            'slug' => 'Slug',
+            'status' => 'Workflow status',
+            'state' => 'Record state',
+            'image' => 'Feature image',
+            'created_at' => 'Created at',
+            'updated_at' => 'Updated at',
+        ],
+        'translations' => [
+            'title' => 'Translations',
+            'empty' => 'No content provided for this locale.',
+        ],
+    ],
+    'audit' => [
+        'created' => 'Page ":title" created',
+        'updated' => 'Page ":title" updated',
+        'deleted' => 'Page ":title" deleted',
+        'bulk_deleted' => 'Page ":title" deleted (bulk)',
+    ],
+];

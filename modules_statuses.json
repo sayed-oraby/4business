@@ -1,0 +1,19 @@
+{
+    "Core": true,
+    "Setting": true,
+    "Authorization": true,
+    "Authentication": true,
+    "User": true,
+    "Activity": true,
+    "Banner": true,
+    "Page": true,
+    "Blog": true,
+    "Category": true,
+    "Brand": true,
+    "Product": true,
+    "Cart": true,
+    "Shipping": true,
+    "Order": true,
+    "Reports": true,
+    "Post": true
+}

@@ -1,0 +1,12 @@
+import './bootstrap';
+import './dashboard/notifications';
+import '../../Modules/Banner/resources/assets/js/banner';
+import '../../Modules/Page/resources/assets/js/page';
+import '../../Modules/Blog/resources/assets/js/blog';
+import '../../Modules/Category/resources/assets/js/category';
+import '../../Modules/Brand/resources/assets/js/brand';
+import '../../Modules/Product/resources/assets/js/product';
+import '../../Modules/Shipping/resources/assets/js/countries';
+import '../../Modules/Shipping/resources/assets/js/shipping-locations';
+import '../../Modules/Order/resources/assets/js/orders';
+import '../../Modules/Order/resources/assets/js/statuses';

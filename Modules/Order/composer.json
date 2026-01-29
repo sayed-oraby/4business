@@ -1,0 +1,28 @@
+{
+    "name": "nwidart/order",
+    "description": "Order & payment module",
+    "authors": [
+        {
+            "name": "gavankit",
+            "email": "dev@gavankit.test"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Order\\": "app/",
+            "Modules\\Order\\Database\\Factories\\": "database/factories/",
+            "Modules\\Order\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Order\\Tests\\": "tests/"
+        }
+    }
+}
