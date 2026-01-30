@@ -141,6 +141,8 @@ return [
             'package' => 'Package',
             'status' => 'Status',
             'display_personal_details' => 'Display Personal Details',
+            'is_price_contact' => 'Price on Contact',
+            'whatsapp_number' => 'WhatsApp Number',
         ],
         'tabs' => [
             'main_info' => 'Main Info',

@@ -244,5 +244,4 @@
             locales: @json($availableLocales),
         };
     </script>
-    @vite('Modules/Category/resources/assets/js/category.js')
 @endpush

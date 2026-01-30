@@ -29,6 +29,7 @@ return [
         'position' => 'Sort order',
         'image' => 'Cover image',
         'image_help' => 'Recommended 600x400px. Allowed types: *.png, *.jpg, *.jpeg',
+        'current_image' => 'Current image',
         'save' => 'Save category',
     ],
     'stats' => [
@@ -85,7 +86,7 @@ return [
     'actions' => [
         'create' => 'Add category',
         'view' => 'View',
-        'edit' => 'Edit',
+        'edit' => 'Edit Category',
         'delete' => 'Delete',
         'bulk_delete' => 'Delete selected',
         'bulk_delete_confirm' => 'You are about to delete :count categories. This action cannot be undone.',

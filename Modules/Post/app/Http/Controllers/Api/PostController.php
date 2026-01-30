@@ -86,6 +86,14 @@ class PostController extends Controller
             $data = $request->validated();
             $user = $request->user();
 
+            // Set same content for both Arabic and English in title and description
+            if (isset($data['title'])) {
+                $data['title'] = ['en' => $data['title'], 'ar' => $data['title']];
+            }
+            if (isset($data['description'])) {
+                $data['description'] = ['en' => $data['description'], 'ar' => $data['description']];
+            }
+
             // Handle Cover Image
             // if ($request->hasFile('cover_image')) {
             //     $data['cover_image'] = $request->file('cover_image')->store('posts/covers', 'public');
@@ -313,6 +321,14 @@ class PostController extends Controller
         return DB::transaction(function () use ($request, $post) {
 
             $data = $request->validated();
+
+            // Set same content for both Arabic and English in title and description
+            if (isset($data['title'])) {
+                $data['title'] = ['en' => $data['title'], 'ar' => $data['title']];
+            }
+            if (isset($data['description'])) {
+                $data['description'] = ['en' => $data['description'], 'ar' => $data['description']];
+            }
 
             // Handle Cover Image
             // if ($request->hasFile('cover_image')) {

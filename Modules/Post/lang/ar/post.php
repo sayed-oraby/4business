@@ -140,6 +140,8 @@ return [
             'package' => 'الباقة',
             'status' => 'الحالة',
             'display_personal_details' => 'عرض البيانات الشخصية',
+            'is_price_contact' => 'السعر عند التواصل',
+            'whatsapp_number' => 'رقم الواتساب',
         ],
         'tabs' => [
             'main_info' => 'المعلومات الرئيسية',

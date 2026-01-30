@@ -3,7 +3,7 @@
         <div class="modal-content rounded-4">
             <div class="modal-header border-0 pb-0">
                 <div>
-                    <h2 class="fw-bold mb-1" data-modal-title>{{ __('category::category.actions.create') }}</h2>
+                    <h2 class="fw-bold mb-1" data-modal-title data-title-create="{{ __('category::category.actions.create') }}" data-title-edit="{{ __('category::category.actions.edit') }}">{{ __('category::category.actions.create') }}</h2>
                     <span class="text-muted fs-7">{{ __('category::category.description') }}</span>
                 </div>
                 <button type="button" class="btn btn-sm btn-icon btn-light" data-bs-dismiss="modal">
@@ -64,6 +64,12 @@
 
                         <div class="col-md-6">
                             <label class="form-label">{{ __('category::category.form.image') }}</label>
+                            <div class="mb-3 d-none" data-category-image-preview-wrapper>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="" alt="Current Image" class="rounded" style="width: 80px; height: 80px; object-fit: cover;" data-category-image-preview>
+                                    <span class="text-muted fs-7">{{ __('category::category.form.current_image') }}</span>
+                                </div>
+                            </div>
                             <input type="file" class="form-control form-control-solid" name="image" accept="image/*">
                             <div class="form-text">{{ __('category::category.form.image_help') }}</div>
                             <div class="invalid-feedback" data-error-for="image"></div>

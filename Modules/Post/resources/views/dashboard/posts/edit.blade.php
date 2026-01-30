@@ -216,6 +216,35 @@
                                 </div>
                             </div>
 
+                            <!-- Is Price Contact -->
+                            <div class="row mb-6">
+                                <label
+                                    class="col-lg-4 col-form-label fw-semibold fs-6">{{ __('post::post.posts.form.is_price_contact') }}</label>
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <div class="form-check form-check-solid form-switch fv-row">
+                                        <input class="form-check-input w-45px h-30px" type="checkbox" id="is_price_contact"
+                                            name="is_price_contact" value="1" {{ $post->is_price_contact ? 'checked' : '' }} />
+                                        <label class="form-check-label" for="is_price_contact"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                       
+
+                            <!-- Paid Status -->
+                            <div class="row mb-6">
+                                <label
+                                    class="col-lg-4 col-form-label fw-semibold fs-6">{{ __('post::post.posts.form.is_paid') }}</label>
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <div class="form-check form-check-solid form-switch fv-row">
+                                        <input class="form-check-input w-45px h-30px" type="checkbox" id="is_paid"
+                                            name="is_paid" value="1" {{ $post->is_paid ? 'checked' : '' }} />
+                                        <label class="form-check-label" for="is_paid"></label>
+                                    </div>
+                                </div>
+                            </div>
 
 
                             <!-- Cover Image -->
@@ -256,18 +285,7 @@
                                 </div>
                             </div>
 
-                            <!-- Paid Status -->
-                            <div class="row mb-6">
-                                <label
-                                    class="col-lg-4 col-form-label fw-semibold fs-6">{{ __('post::post.posts.form.is_paid') }}</label>
-                                <div class="col-lg-8 d-flex align-items-center">
-                                    <div class="form-check form-check-solid form-switch fv-row">
-                                        <input class="form-check-input w-45px h-30px" type="checkbox" id="is_paid"
-                                            name="is_paid" value="1" {{ $post->is_paid ? 'checked' : '' }} />
-                                        <label class="form-check-label" for="is_paid"></label>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
 
                         <!-- Personal Details Tab -->
@@ -288,6 +306,15 @@
                                     <input type="text" name="mobile_number"
                                         class="form-control form-control-lg form-control-solid"
                                         value="{{ old('mobile_number', $post->mobile_number) }}" required />
+                                </div>
+                            </div>
+                            <div class="row mb-6">
+                                <label
+                                    class="col-lg-4 col-form-label fw-semibold fs-6">{{ __('post::post.posts.form.whatsapp_number') }}</label>
+                                <div class="col-lg-8 fv-row">
+                                    <input type="text" name="whatsapp_number"
+                                        class="form-control form-control-lg form-control-solid"
+                                        value="{{ old('whatsapp_number', $post->whatsapp_number) }}" placeholder="{{ __('post::post.posts.form.whatsapp_number') }}" />
                                 </div>
                             </div>
                             {{-- <div class="row mb-6">
@@ -376,12 +403,8 @@
                                     <div class="form-group row">
                                         <div data-repeater-list="attachments" class="col-lg-12">
                                             <div data-repeater-item class="form-group row align-items-center mb-5">
-                                                <div class="col-md-5">
-                                                    <input type="text" name="attachment_title"
-                                                        class="form-control form-control-solid"
-                                                        placeholder="{{ __('post::post.posts.placeholders.attachment_title') }}" />
-                                                </div>
-                                                <div class="col-md-5">
+                                                
+                                                <div class="col-md-10">
                                                     <input type="file" name="file" accept=".png, .jpg, .jpeg"
                                                         class="form-control form-control-solid" />
                                                 </div>

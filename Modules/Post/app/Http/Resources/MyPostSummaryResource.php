@@ -29,6 +29,10 @@ class MyPostSummaryResource extends JsonResource
             'is_fav' => auth()->guard('api')->check() ? \Modules\Post\Models\Fav::where('user_id', auth()->guard('api')->id())->where('post_id', $this->uuid)->exists() : false,
 
             'price' => $this->price,
+            'is_price_contact' => (bool)$this->is_price_contact,
+
+            'mobile_number' => $this->mobile_number,
+            'whatsapp_number' => $this->whatsapp_number,
 
             'status' => $this->status,
             'rejection_reason' => $this->rejection_reason,

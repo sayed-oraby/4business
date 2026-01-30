@@ -24,8 +24,8 @@ class CategoryResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            // 'title_translations' => $this->titleTranslations,
-            // 'parent_id' => $this->parent_id,
+            'title_translations' => $this->titleTranslations,
+            'parent_id' => $this->parent_id,
             'parent' => $this->whenLoaded('parent', function () {
                 return [
                     'id' => $this->parent->id,
@@ -34,14 +34,14 @@ class CategoryResource extends JsonResource
                 ];
             }),
             'image_url' => $imageUrl,
-            // 'image_path' => $this->image_path,
-            // 'status' => $this->status,
-            // 'status_label' => __('category::category.statuses.' . ($this->status ?? 'draft')),
-            // 'is_featured' => $this->is_featured,
-            // 'featured_order' => $this->featured_order,
-            // 'position' => $this->position,
-            // 'created_at' => $this->created_at,
-            // 'updated_at' => $this->updated_at?->format('Y-m-d H:i'),
+            'image_path' => $this->image_path,
+            'status' => $this->status,
+            'status_label' => __('category::category.statuses.' . ($this->status ?? 'draft')),
+            'is_featured' => $this->is_featured,
+            'featured_order' => $this->featured_order,
+            'position' => $this->position,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at?->format('Y-m-d H:i'),
         ];
     }
 }

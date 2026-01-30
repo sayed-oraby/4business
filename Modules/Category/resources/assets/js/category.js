@@ -313,6 +313,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (featuredSwitch) {
             featuredSwitch.checked = false;
         }
+
+        // Reset modal title to "Create"
+        const modalTitle = document.querySelector('[data-modal-title]');
+        if (modalTitle) {
+            modalTitle.textContent = modalTitle.dataset.titleCreate || 'Add Category';
+        }
+
+        // Hide image preview
+        const imagePreviewWrapper = document.querySelector('[data-category-image-preview-wrapper]');
+        if (imagePreviewWrapper) {
+            imagePreviewWrapper.classList.add('d-none');
+        }
     }
 
     function fillForm(category) {
@@ -323,6 +335,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const methodInput = form.querySelector('input[name="_method"]');
         if (idInput) idInput.value = category.id;
         if (methodInput) methodInput.value = 'PUT';
+
+        // Change modal title to "Edit"
+        const modalTitle = document.querySelector('[data-modal-title]');
+        if (modalTitle) {
+            modalTitle.textContent = modalTitle.dataset.titleEdit || 'Edit Category';
+        }
+
+        // Show image preview if exists
+        const imagePreviewWrapper = document.querySelector('[data-category-image-preview-wrapper]');
+        const imagePreview = document.querySelector('[data-category-image-preview]');
+        if (imagePreviewWrapper && imagePreview && category.image_url) {
+            imagePreview.src = category.image_url;
+            imagePreviewWrapper.classList.remove('d-none');
+        }
 
         setValue('select[name="status"]', category.status ?? 'draft');
         setValue('input[name="position"]', category.position ?? 0);

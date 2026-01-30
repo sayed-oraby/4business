@@ -40,6 +40,9 @@ class StorePostRequest extends FormRequest
             
             'attachments' => 'nullable|array',
             'attachments.*' => 'file|mimes:pdf,doc,docx,png,jpg,jpeg|max:25600',
+
+            'is_price_contact' => 'nullable|boolean',
+            'whatsapp_number' => 'nullable|string',
         ];
     }
 

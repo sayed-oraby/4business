@@ -1,6 +1,5 @@
 import './bootstrap';
 import './dashboard/notifications';
-import '../../Modules/Banner/resources/assets/js/banner';
 import '../../Modules/Page/resources/assets/js/page';
 import '../../Modules/Blog/resources/assets/js/blog';
 import '../../Modules/Category/resources/assets/js/category';

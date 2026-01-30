@@ -168,9 +168,23 @@
                     </div>
                 </div>
                 <div class="row mb-7">
+                    <label class="col-lg-4 fw-semibold text-muted">{{ __('post::post.posts.form.is_price_contact') }}</label>
+                    <div class="col-lg-8 fv-row">
+                        <span class="badge badge-light-{{ $post->is_price_contact ? 'success' : 'danger' }} fs-6">
+                            {{ $post->is_price_contact ? __('post::post.posts.yes') : __('post::post.posts.no') }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row mb-7">
                     <label class="col-lg-4 fw-semibold text-muted">{{ __('post::post.posts.form.mobile') }}</label>
                     <div class="col-lg-8 fv-row">
                         <span class="fw-semibold text-gray-800 fs-6">{{ $post->mobile_number }}</span>
+                    </div>
+                </div>
+                <div class="row mb-7">
+                    <label class="col-lg-4 fw-semibold text-muted">{{ __('post::post.posts.form.whatsapp_number') }}</label>
+                    <div class="col-lg-8 fv-row">
+                        <span class="fw-semibold text-gray-800 fs-6">{{ $post->whatsapp_number ?? '-' }}</span>
                     </div>
                 </div>
                 {{-- <div class="row mb-7">

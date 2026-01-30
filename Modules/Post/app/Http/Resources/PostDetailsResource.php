@@ -26,6 +26,8 @@ class PostDetailsResource extends JsonResource
 
             'views_count' => $this->views_count,
             'mobile_number' => $this->mobile_number,
+            'whatsapp_number' => $this->whatsapp_number,
+            'is_price_contact' => (bool)$this->is_price_contact,
 
             'status' => $this->status,
             'rejection_reason' => $this->rejection_reason,
@@ -57,7 +59,7 @@ class PostDetailsResource extends JsonResource
                     'title' => $this->package->getTranslation('title', $locale),
                     'price' => $this->package->price,
                     'period_days' => $this->package->period_days,
-                       'label_color' => $this->package->label_color,
+                    'label_color' => $this->package->label_color,
                     'card_color' => $this->package->card_color,
                 ];
             }),

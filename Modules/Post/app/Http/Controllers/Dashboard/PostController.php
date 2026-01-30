@@ -191,6 +191,8 @@ class PostController extends Controller
             // 'birthdate' => 'nullable|date',
             'display_personal_details' => 'boolean',
             'is_paid' => 'boolean',
+            'is_price_contact' => 'boolean',
+            'whatsapp_number' => 'nullable|string|max:20',
 
             // Attachments
             'attachments' => 'nullable|array',
@@ -207,6 +209,7 @@ class PostController extends Controller
         // Handle Boolean Fields
         $validated['display_personal_details'] = $request->has('display_personal_details');
         $validated['is_paid'] = $request->has('is_paid');
+        $validated['is_price_contact'] = $request->has('is_price_contact');
 
         $post->update($validated);
 

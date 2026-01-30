@@ -46,12 +46,15 @@ class Post extends Model
         'end_date',
         'is_paid',
         'price',
+        'is_price_contact',
+        'whatsapp_number',
         'views_count',
     ];
 
     protected $casts = [
         'display_personal_details' => 'boolean',
         'is_paid' => 'boolean',
+        'is_price_contact' => 'boolean',
         'start_date' => 'datetime',
         'end_date' => 'datetime',
         'birthdate' => 'date',

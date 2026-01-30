@@ -8,15 +8,6 @@
       "_index-B9ygI19o.js"
     ]
   },
-  "Modules/Banner/resources/assets/js/banner.js": {
-    "file": "assets/banner-DLNUBxCb.js",
-    "name": "banner",
-    "src": "Modules/Banner/resources/assets/js/banner.js",
-    "isEntry": true,
-    "imports": [
-      "_index-B9ygI19o.js"
-    ]
-  },
   "Modules/Blog/resources/assets/js/blog.js": {
     "file": "assets/blog-DlZfQdBH.js",
     "name": "blog",
@@ -30,15 +21,6 @@
     "file": "assets/brand-xNjlSWTL.js",
     "name": "brand",
     "src": "Modules/Brand/resources/assets/js/brand.js",
-    "isEntry": true,
-    "imports": [
-      "_index-B9ygI19o.js"
-    ]
-  },
-  "Modules/Category/resources/assets/js/category.js": {
-    "file": "assets/category-DgDSUtvH.js",
-    "name": "category",
-    "src": "Modules/Category/resources/assets/js/category.js",
     "isEntry": true,
     "imports": [
       "_index-B9ygI19o.js"
@@ -136,7 +118,7 @@
     "name": "index"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BS93cS_w.css",
+    "file": "assets/app-GZLX1wgb.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -145,16 +127,14 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BONvsY8p.js",
+    "file": "assets/app-zGRWSfh0.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
       "_index-B9ygI19o.js",
-      "Modules/Banner/resources/assets/js/banner.js",
       "Modules/Page/resources/assets/js/page.js",
       "Modules/Blog/resources/assets/js/blog.js",
-      "Modules/Category/resources/assets/js/category.js",
       "Modules/Brand/resources/assets/js/brand.js",
       "Modules/Product/resources/assets/js/product.js",
       "Modules/Order/resources/assets/js/orders.js",
