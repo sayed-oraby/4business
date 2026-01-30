@@ -13,7 +13,12 @@ Route::middleware('web')
     ->name('frontend.')
     ->group(function () {
         // Home page
-        Route::get('/', [HomeController::class, 'index'])->name('home');
+        // Route::get('/', [HomeController::class, 'index'])->name('home');
+
+        Route::get('/', function () {
+            return 'welcome';
+        })->name('home');
+
         // AJAX load more posts
         Route::get('/load-more-posts', [HomeController::class, 'loadMore'])->name('home.loadMore');
     });
