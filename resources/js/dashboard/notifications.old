@@ -92,14 +92,14 @@ class DashboardNotificationCenter {
         const meta = this.iconMeta(item.level);
         const createdAt = item.created_at || this.config.translations?.justNow || 'Just now';
 
-        // Get locale from config (server-side) first, fallback to document lang
-        const locale = this.config?.locale || document.documentElement.lang || 'en';
+        // Get locale-specific translations
+        const locale = document.documentElement.lang || 'en';
         const titleTranslations = item.payload?.title_translations || {};
         const messageTranslations = item.payload?.message_translations || {};
 
-        // Use item.title from backend as primary (already translated), then check translations
-        const title = item.title || titleTranslations[locale] || titleTranslations['en'] || '';
-        const message = item.message || messageTranslations[locale] || messageTranslations['en'] || item.payload?.action_label || '';
+        // Use translated title if available, fallback to item.title
+        const title = titleTranslations[locale] || titleTranslations['en'] || item.title || '';
+        const message = messageTranslations[locale] || messageTranslations['en'] || item.message || item.payload?.action_label || '';
 
         const userLabel = item.user_label || item.user?.name || item.user?.email || '';
         const performerLine = userLabel
@@ -293,9 +293,9 @@ class DashboardNotificationCenter {
         }
 
         // Get locale-specific title
-        const locale = this.config?.locale || document.documentElement.lang || 'en';
+        const locale = document.documentElement.lang || 'en';
         const titleTranslations = item.payload?.title_translations || {};
-        const title = item.title || titleTranslations[locale] || titleTranslations['en'] || '';
+        const title = titleTranslations[locale] || titleTranslations['en'] || item.title || '';
 
         const userName = item.payload?.user?.name || item.payload?.user?.email || '';
         const action = item.payload?.action_label || item.payload?.action || title;

@@ -182,9 +182,10 @@ class NotificationController extends Controller
             return null;
         }
 
+        $locale = app()->getLocale();
         $key = 'dashboard.actions_map.' . $action;
 
-        return Lang::has($key) ? __($key) : $action;
+        return Lang::hasForLocale($key, $locale) ? __($key, [], $locale) : $action;
     }
 
     protected function translateContext(?string $context): ?string
@@ -193,10 +194,33 @@ class NotificationController extends Controller
             return null;
         }
 
+        $locale = app()->getLocale();
         $key = 'dashboard.contexts.' . $context;
 
-        return Lang::has($key) ? __($key) : $context;
+        return Lang::hasForLocale($key, $locale) ? __($key, [], $locale) : $context;
     }
+    
+    // protected function translateAction(?string $action): ?string
+    // {
+    //     if (! $action) {
+    //         return null;
+    //     }
+
+    //     $key = 'dashboard.actions_map.' . $action;
+
+    //     return Lang::has($key) ? __($key) : $action;
+    // }
+
+    // protected function translateContext(?string $context): ?string
+    // {
+    //     if (! $context) {
+    //         return null;
+    //     }
+
+    //     $key = 'dashboard.contexts.' . $context;
+
+    //     return Lang::has($key) ? __($key) : $context;
+    // }
 
     protected function levelBadge(string $level): string
     {

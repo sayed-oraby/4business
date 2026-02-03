@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html @if(is_rtl() == 'rtl') direction="rtl" dir="rtl" style="direction: rtl" @else lang="en" @endif>
+{{--  <html @if(is_rtl() == 'rtl') direction="rtl" dir="rtl" style="direction: rtl" @else lang="en" @endif>  --}}
+<html lang="{{ app()->getLocale() }}" @if(is_rtl() == 'rtl') direction="rtl" dir="rtl" style="direction: rtl" @endif>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
