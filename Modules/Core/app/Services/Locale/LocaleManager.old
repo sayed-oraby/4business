@@ -15,20 +15,18 @@ class LocaleManager
      */
     public function resolve(Request $request): array
     {
-        // Always check cookie first to preserve user's explicit language choice
-        $cookieLocale = $request->cookie($this->cookieName());
-
-        if ($this->isSupported($cookieLocale)) {
-            return ['locale' => $cookieLocale, 'persist' => false];
-        }
-
-        // For API/JSON requests, try Accept-Language header as fallback
         if ($this->shouldResolveFromHeader($request)) {
             $headerLocale = $this->localeFromHeader($request->header('Accept-Language'));
 
             if ($headerLocale !== null) {
                 return ['locale' => $headerLocale, 'persist' => false];
             }
+        }
+
+        $cookieLocale = $request->cookie($this->cookieName());
+
+        if ($this->isSupported($cookieLocale)) {
+            return ['locale' => $cookieLocale, 'persist' => false];
         }
 
         $default = $this->default();
