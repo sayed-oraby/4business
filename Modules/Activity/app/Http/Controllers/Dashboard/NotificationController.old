@@ -121,24 +121,15 @@ class NotificationController extends Controller
         $contextLabel = $this->translateContext($context);
 
         $payload = $notification->payload ?? [];
-
-        // Try to get translated title from payload first
-        $title = $this->resolvePayloadText($payload, 'title');
-
-        // If no translation found, use action label (which is translated with current locale)
-        if (empty($title)) {
-            $title = $actionLabel ?: $contextLabel ?: $notification->title;
+        $title = $this->resolvePayloadText($payload, 'title') ?? $notification->title;
+        if (empty($title) || $title === $action || $title === $context) {
+            $title = $actionLabel ?: ($contextLabel ?: $title);
         }
 
-        // Try to get translated message from payload first
-        $message = $this->resolvePayloadText($payload, 'message');
-
-        // If no translation found, use context label or notification message
-        if (empty($message)) {
-            $message = $contextLabel
-                ?? Arr::get($payload, 'notification_message')
-                ?? $notification->message;
-        }
+        $message = $this->resolvePayloadText($payload, 'message')
+            ?? $notification->message
+            ?? Arr::get($payload, 'notification_message')
+            ?? $contextLabel;
 
         $payload['action_label'] = $payload['action_label'] ?? $actionLabel;
         $payload['context_label'] = $payload['context_label'] ?? $contextLabel;
@@ -208,7 +199,7 @@ class NotificationController extends Controller
 
         return Lang::hasForLocale($key, $locale) ? __($key, [], $locale) : $context;
     }
-
+    
     // protected function translateAction(?string $action): ?string
     // {
     //     if (! $action) {
@@ -249,20 +240,16 @@ class NotificationController extends Controller
 
     protected function resolvePayloadText(array $payload, string $type): ?string
     {
-        $locale = app()->getLocale();
-
-        // First, try to get the localized translation from payload
         if ($value = $this->localizedFromPayload($payload, $type)) {
             return $value;
         }
 
-        // Try to translate using the key with current locale
         $key = Arr::get($payload, "{$type}_key");
 
-        if ($key && Lang::hasForLocale($key, $locale)) {
+        if ($key && Lang::has($key)) {
             $params = Arr::get($payload, "{$type}_params", []);
 
-            return Lang::get($key, is_array($params) ? $params : [], $locale);
+            return __($key, is_array($params) ? $params : []);
         }
 
         return $this->translatePayloadText($payload, $type);
@@ -298,22 +285,20 @@ class NotificationController extends Controller
             return null;
         }
 
-        $locale = app()->getLocale();
         $params = Arr::get($payload, "{$type}_params", []);
 
-        if (! Lang::hasForLocale($key, $locale)) {
+        if (! Lang::has($key)) {
             return null;
         }
 
-        return Lang::get($key, is_array($params) ? $params : [], $locale);
+        return __($key, is_array($params) ? $params : []);
     }
 
     protected function levelLabel(string $level): string
     {
-        $locale = app()->getLocale();
         $key = 'dashboard.notification_levels.' . $level;
 
-        return Lang::hasForLocale($key, $locale) ? Lang::get($key, [], $locale) : ucfirst($level);
+        return Lang::has($key) ? __($key) : ucfirst($level);
     }
 
     protected function formatUserDetails(?array $user): string

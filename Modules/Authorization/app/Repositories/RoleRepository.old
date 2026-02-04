@@ -57,46 +57,27 @@ class RoleRepository
 
     public function permissionsForRole(Role $role): array
     {
-        $locale = app()->getLocale();
-        $labels = Lang::get('authorization::authorization.permissions_list', [], $locale);
-
-        return $role->permissions()
-            ->orderBy('name')
-            ->get()
-            ->map(function (Permission $permission) use ($labels) {
-                $module = explode('.', $permission->name)[0] ?? 'general';
-                $label = $labels[$module][$permission->name] ?? $permission->name;
-
-                return [
-                    'name' => $permission->name,
-                    'label' => $label,
-                ];
-            })
-            ->all();
+        return $role->permissions()->pluck('name')->all();
     }
 
     public function availablePermissions(): array
     {
-        $locale = app()->getLocale();
-        $labels = Lang::get('authorization::authorization.permissions_list', [], $locale);
-        $modulesLabels = Lang::get('authorization::authorization.modules_labels', [], $locale);
+        $labels = Lang::get('authorization::authorization.permissions_list');
 
         return Permission::query()
             ->orderBy('name')
             ->get()
             ->groupBy(fn (Permission $permission) => explode('.', $permission->name)[0] ?? 'general')
-            ->map(function ($group, $module) use ($labels, $modulesLabels) {
-                return [
-                    'module_label' => $modulesLabels[$module] ?? ucfirst($module),
-                    'permissions' => $group->map(function (Permission $permission) use ($module, $labels) {
-                        $label = $labels[$module][$permission->name] ?? $permission->name;
+            ->map(function ($group, $module) use ($labels) {
+                return $group->map(function (Permission $permission) use ($module, $labels) {
+                    $key = "{$module}.{$permission->name}";
+                    $label = data_get($labels, $key, $permission->name);
 
-                        return [
-                            'name' => $permission->name,
-                            'label' => $label,
-                        ];
-                    })->values()->all(),
-                ];
+                    return [
+                        'name' => $permission->name,
+                        'label' => $label,
+                    ];
+                });
             })
             ->toArray();
     }
