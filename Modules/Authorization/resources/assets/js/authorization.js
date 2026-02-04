@@ -70,12 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = $('[data-permission-groups]');
         container.empty();
 
-        Object.entries(availablePermissions).forEach(([module, permissions]) => {
+        // Convert selected to array of names if it's an array of objects
+        const selectedNames = selected.map(p => typeof p === 'string' ? p : p.name);
+
+        Object.entries(availablePermissions).forEach(([module, groupData]) => {
             const group = $('<div class="mb-5"></div>');
-            group.append(`<h5 class="fw-semibold text-gray-800 mb-3 text-uppercase">${module}</h5>`);
+            const moduleLabel = groupData.module_label || module;
+            const permissions = groupData.permissions || groupData;
+
+            group.append(`<h5 class="fw-semibold text-gray-800 mb-3 text-uppercase">${moduleLabel}</h5>`);
 
             const grid = $('<div class="row g-3"></div>');
-            permissions.forEach((permission) => {
+            const permissionsList = Array.isArray(permissions) ? permissions : Object.values(permissions);
+
+            permissionsList.forEach((permission) => {
                 const name = typeof permission === 'string' ? permission : permission.name;
                 const label = typeof permission === 'string' ? permission : (permission.label ?? permission.name);
                 const id = `perm_${name.replace('.', '_')}`;
@@ -83,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="col-md-6">
                         <label class="form-check form-check-custom form-check-solid">
                             <input class="form-check-input" type="checkbox" value="${name}" name="permissions[]"
-                                ${selected.includes(name) ? 'checked' : ''}>
+                                ${selectedNames.includes(name) ? 'checked' : ''}>
                             <span class="form-check-label">${label}</span>
                         </label>
                     </div>
