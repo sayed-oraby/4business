@@ -87,6 +87,9 @@ return [
         'posts' => 'المنشورات',
         'pages' => 'الصفحات',
         'banners' => 'البنرات',
+        'categories' => 'الفئات',
+        'attributes' => 'الخصائص',
+        'attribute_values' => 'قيم الخصائص',
     ],
     'actions' => [
         'login' => 'تسجيل الدخول',
@@ -134,6 +137,24 @@ return [
             'update' => 'تم تحديث صفحة',
             'delete' => 'تم حذف صفحة',
             'bulk_delete' => 'تم حذف مجموعة من الصفحات',
+        ],
+        'categories' => [
+            'create' => 'تم إنشاء فئة',
+            'update' => 'تم تحديث فئة',
+            'delete' => 'تم حذف فئة',
+            'bulk_delete' => 'تم حذف مجموعة من الفئات',
+        ],
+        'attributes' => [
+            'create' => 'تم إنشاء خاصية',
+            'update' => 'تم تحديث خاصية',
+            'delete' => 'تم حذف خاصية',
+            'bulk_delete' => 'تم حذف مجموعة من الخصائص',
+        ],
+        'attribute_values' => [
+            'create' => 'تم إنشاء قيمة خاصية',
+            'update' => 'تم تحديث قيمة خاصية',
+            'delete' => 'تم حذف قيمة خاصية',
+            'bulk_delete' => 'تم حذف مجموعة من قيم الخصائص',
         ],
         // Flat keys for actions stored as English text
         'User registered' => 'تم تسجيل مستخدم جديد',
@@ -201,7 +222,7 @@ return [
     'available_products' => 'المنتجات المتاحة',
     'low_stock' => 'مخزون منخفض',
     'out_of_stock' => 'منتهي المخزون',
-    
+
     // Post Dashboard Statistics
     'dashboard_statistics' => 'إحصائيات لوحة التحكم',
     'posts_payments_overview' => 'نظرة عامة على الإعلانات والمدفوعات',
@@ -228,12 +249,12 @@ return [
     'featured' => 'مميز',
     'regular' => 'عادي',
     'no_posts_under_review' => 'لا توجد إعلانات تحت المراجعة',
-    
+
     // Shipping Menu
     'shipping' => 'دول و مناطق',
     'shipping_countries' => 'دول',
     'shipping_locations' => 'مناطق ومدن',
-    
+
     // New Dashboard Analytics
     'dashboard_analytics' => 'تحليلات الإعلانات',
     'stats_overview' => 'إحصائيات وتوزيع لجميع الإعلانات الوظيفية',
@@ -258,6 +279,6 @@ return [
     'view' => 'عرض',
     'package' => 'الباقة',
 
-  
+
 ];
 

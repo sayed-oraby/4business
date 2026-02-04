@@ -87,6 +87,9 @@ return [
         'posts' => 'Posts',
         'pages' => 'Pages',
         'banners' => 'Banners',
+        'categories' => 'Categories',
+        'attributes' => 'Attributes',
+        'attribute_values' => 'Attribute Values',
     ],
     'actions' => [
         'login' => 'Login',
@@ -134,6 +137,24 @@ return [
             'update' => 'page is updated',
             'delete' => 'page is deleted',
             'bulk_delete' => 'pages are deleted',
+        ],
+        'categories' => [
+            'create' => 'category is created',
+            'update' => 'category is updated',
+            'delete' => 'category is deleted',
+            'bulk_delete' => 'categories are deleted',
+        ],
+        'attributes' => [
+            'create' => 'attribute is created',
+            'update' => 'attribute is updated',
+            'delete' => 'attribute is deleted',
+            'bulk_delete' => 'attributes are deleted',
+        ],
+        'attribute_values' => [
+            'create' => 'attribute value is created',
+            'update' => 'attribute value is updated',
+            'delete' => 'attribute value is deleted',
+            'bulk_delete' => 'attribute values are deleted',
         ],
         // Flat keys for actions stored as English text
         'User registered' => 'User registered',
@@ -202,7 +223,7 @@ return [
     'available_products' => 'Available Products',
     'low_stock' => 'Low Stock',
     'out_of_stock' => 'Out of Stock',
-    
+
     // Post Dashboard Statistics
     'dashboard_statistics' => 'Dashboard Statistics',
     'posts_payments_overview' => 'Overview of posts and payments',
@@ -229,12 +250,12 @@ return [
     'featured' => 'Featured',
     'regular' => 'Regular',
     'no_posts_under_review' => 'No posts under review',
-    
+
     // Shipping Menu
     'shipping' => 'Shipping',
     'shipping_countries' => 'Countries',
     'shipping_locations' => 'States and Cities',
-    
+
     // New Dashboard Analytics
     'dashboard_analytics' => 'Dashboard Analytics',
     'stats_overview' => 'Overview of all posts and user statistics',
