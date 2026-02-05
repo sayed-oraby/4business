@@ -279,5 +279,9 @@ return [
     'uncategorized' => 'Uncategorized',
     'view' => 'View',
     'package' => 'Package',
+
+    'my_profile' => 'Profile',
+    'my_profile_description' => 'Manage your profile and account settings',
+    'sign_out' => 'Sign out',
 ];
 
